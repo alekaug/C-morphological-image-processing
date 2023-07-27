@@ -1,0 +1,225 @@
+\begin{theindex}
+
+  \item {AllocateInputMemory}
+    \subitem {functions.c}, \hyperpage{16}
+    \subitem {functions.h}, \hyperpage{24}
+  \item {AllocateOutputMemory}
+    \subitem {functions.c}, \hyperpage{16}
+    \subitem {functions.h}, \hyperpage{25}
+
+  \indexspace
+
+  \item {BITMAPHEADER}, \hyperpage{5}
+    \subitem {bmp.h}, \hyperpage{14}
+    \subitem {colors\_importance\_rotation}, \hyperpage{6}
+    \subitem {colors\_used}, \hyperpage{6}
+    \subitem {comp}, \hyperpage{6}
+    \subitem {height}, \hyperpage{6}
+    \subitem {image\_size}, \hyperpage{6}
+    \subitem {numBitPlanes}, \hyperpage{6}
+    \subitem {numBitsPerPlane}, \hyperpage{7}
+    \subitem {reserved}, \hyperpage{7}
+    \subitem {size}, \hyperpage{7}
+    \subitem {width}, \hyperpage{7}
+    \subitem {Xres}, \hyperpage{7}
+    \subitem {Yres}, \hyperpage{7}
+  \item {blue}
+    \subitem {PIXEL}, \hyperpage{10}
+  \item {bmp.h}, \hyperpage{13}
+    \subitem {BITMAPHEADER}, \hyperpage{14}
+    \subitem {BMPFILEHEADER}, \hyperpage{14}
+    \subitem {PIXEL}, \hyperpage{14}
+    \subitem {pixel\_structure}, \hyperpage{14}
+  \item {BMPFILEHEADER}, \hyperpage{8}
+    \subitem {bmp.h}, \hyperpage{14}
+    \subitem {offset}, \hyperpage{8}
+    \subitem {r1}, \hyperpage{8}
+    \subitem {r2}, \hyperpage{9}
+    \subitem {s1}, \hyperpage{9}
+    \subitem {s2}, \hyperpage{9}
+    \subitem {size}, \hyperpage{9}
+
+  \indexspace
+
+  \item {change\_pixel\_color}
+    \subitem {functions.c}, \hyperpage{17}
+    \subitem {functions.h}, \hyperpage{25}
+  \item {check\_pixel\_color}
+    \subitem {functions.c}, \hyperpage{17}
+    \subitem {functions.h}, \hyperpage{26}
+  \item {closing}
+    \subitem {functions.c}, \hyperpage{17}
+    \subitem {functions.h}, \hyperpage{26}
+  \item {colors\_importance\_rotation}
+    \subitem {BITMAPHEADER}, \hyperpage{6}
+  \item {colors\_used}
+    \subitem {BITMAPHEADER}, \hyperpage{6}
+  \item {comp}
+    \subitem {BITMAPHEADER}, \hyperpage{6}
+
+  \indexspace
+
+  \item {deallocate\_sieve}
+    \subitem {functions.c}, \hyperpage{18}
+    \subitem {functions.h}, \hyperpage{26}
+  \item {DeallocateInputMemory}
+    \subitem {functions.c}, \hyperpage{18}
+    \subitem {functions.h}, \hyperpage{27}
+  \item {DeallocateOutputMemory}
+    \subitem {functions.c}, \hyperpage{19}
+    \subitem {functions.h}, \hyperpage{27}
+
+  \indexspace
+
+  \item {functions.c}, \hyperpage{15}
+    \subitem {AllocateInputMemory}, \hyperpage{16}
+    \subitem {AllocateOutputMemory}, \hyperpage{16}
+    \subitem {change\_pixel\_color}, \hyperpage{17}
+    \subitem {check\_pixel\_color}, \hyperpage{17}
+    \subitem {closing}, \hyperpage{17}
+    \subitem {deallocate\_sieve}, \hyperpage{18}
+    \subitem {DeallocateInputMemory}, \hyperpage{18}
+    \subitem {DeallocateOutputMemory}, \hyperpage{19}
+    \subitem {load\_sieve}, \hyperpage{19}
+    \subitem {main\_point}, \hyperpage{19}
+    \subitem {opening}, \hyperpage{20}
+    \subitem {operation}, \hyperpage{20}
+    \subitem {ReadPixels}, \hyperpage{21}
+    \subitem {ReadToStructure}, \hyperpage{21}
+    \subitem {SaveBMPFile}, \hyperpage{21}
+    \subitem {WriteFromStructure}, \hyperpage{23}
+  \item {functions.h}, \hyperpage{23}
+    \subitem {AllocateInputMemory}, \hyperpage{24}
+    \subitem {AllocateOutputMemory}, \hyperpage{25}
+    \subitem {change\_pixel\_color}, \hyperpage{25}
+    \subitem {check\_pixel\_color}, \hyperpage{26}
+    \subitem {closing}, \hyperpage{26}
+    \subitem {deallocate\_sieve}, \hyperpage{26}
+    \subitem {DeallocateInputMemory}, \hyperpage{27}
+    \subitem {DeallocateOutputMemory}, \hyperpage{27}
+    \subitem {load\_sieve}, \hyperpage{28}
+    \subitem {main\_point}, \hyperpage{28}
+    \subitem {opening}, \hyperpage{28}
+    \subitem {operation}, \hyperpage{30}
+    \subitem {ReadPixels}, \hyperpage{30}
+    \subitem {ReadToStructure}, \hyperpage{31}
+    \subitem {SaveBMPFile}, \hyperpage{31}
+    \subitem {WriteFromStructure}, \hyperpage{32}
+
+  \indexspace
+
+  \item {green}
+    \subitem {PIXEL}, \hyperpage{10}
+
+  \indexspace
+
+  \item {height}
+    \subitem {BITMAPHEADER}, \hyperpage{6}
+
+  \indexspace
+
+  \item {image\_size}
+    \subitem {BITMAPHEADER}, \hyperpage{6}
+
+  \indexspace
+
+  \item {load\_sieve}
+    \subitem {functions.c}, \hyperpage{19}
+    \subitem {functions.h}, \hyperpage{28}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.c}, \hyperpage{32}
+  \item {main.c}, \hyperpage{32}
+    \subitem {main}, \hyperpage{32}
+  \item {main\_point}
+    \subitem {functions.c}, \hyperpage{19}
+    \subitem {functions.h}, \hyperpage{28}
+
+  \indexspace
+
+  \item {next}
+    \subitem {pixel\_structure}, \hyperpage{11}
+  \item {numBitPlanes}
+    \subitem {BITMAPHEADER}, \hyperpage{6}
+  \item {numBitsPerPlane}
+    \subitem {BITMAPHEADER}, \hyperpage{7}
+
+  \indexspace
+
+  \item {offset}
+    \subitem {BMPFILEHEADER}, \hyperpage{8}
+  \item {opening}
+    \subitem {functions.c}, \hyperpage{20}
+    \subitem {functions.h}, \hyperpage{28}
+  \item {operation}
+    \subitem {functions.c}, \hyperpage{20}
+    \subitem {functions.h}, \hyperpage{30}
+
+  \indexspace
+
+  \item {PIXEL}, \hyperpage{9}
+    \subitem {blue}, \hyperpage{10}
+    \subitem {bmp.h}, \hyperpage{14}
+    \subitem {green}, \hyperpage{10}
+    \subitem {red}, \hyperpage{10}
+  \item {pixel\_structure}, \hyperpage{11}
+    \subitem {bmp.h}, \hyperpage{14}
+    \subitem {next}, \hyperpage{11}
+    \subitem {type}, \hyperpage{11}
+
+  \indexspace
+
+  \item {r1}
+    \subitem {BMPFILEHEADER}, \hyperpage{8}
+  \item {r2}
+    \subitem {BMPFILEHEADER}, \hyperpage{9}
+  \item {ReadPixels}
+    \subitem {functions.c}, \hyperpage{21}
+    \subitem {functions.h}, \hyperpage{30}
+  \item {ReadToStructure}
+    \subitem {functions.c}, \hyperpage{21}
+    \subitem {functions.h}, \hyperpage{31}
+  \item {red}
+    \subitem {PIXEL}, \hyperpage{10}
+  \item {reserved}
+    \subitem {BITMAPHEADER}, \hyperpage{7}
+
+  \indexspace
+
+  \item {s1}
+    \subitem {BMPFILEHEADER}, \hyperpage{9}
+  \item {s2}
+    \subitem {BMPFILEHEADER}, \hyperpage{9}
+  \item {SaveBMPFile}
+    \subitem {functions.c}, \hyperpage{21}
+    \subitem {functions.h}, \hyperpage{31}
+  \item {size}
+    \subitem {BITMAPHEADER}, \hyperpage{7}
+    \subitem {BMPFILEHEADER}, \hyperpage{9}
+
+  \indexspace
+
+  \item {type}
+    \subitem {pixel\_structure}, \hyperpage{11}
+
+  \indexspace
+
+  \item {width}
+    \subitem {BITMAPHEADER}, \hyperpage{7}
+  \item {WriteFromStructure}
+    \subitem {functions.c}, \hyperpage{23}
+    \subitem {functions.h}, \hyperpage{32}
+
+  \indexspace
+
+  \item {Xres}
+    \subitem {BITMAPHEADER}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Yres}
+    \subitem {BITMAPHEADER}, \hyperpage{7}
+
+\end{theindex}

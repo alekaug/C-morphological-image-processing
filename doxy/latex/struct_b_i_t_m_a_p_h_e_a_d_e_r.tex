@@ -1,0 +1,165 @@
+\hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r}{}\doxysection{Dokumentacja struktury B\+I\+T\+M\+A\+P\+H\+E\+A\+D\+ER}
+\label{struct_b_i_t_m_a_p_h_e_a_d_e_r}\index{BITMAPHEADER@{BITMAPHEADER}}
+
+
+Struktura przechowująca nagłówek D\+IB.  
+
+
+
+
+{\ttfamily \#include $<$bmp.\+h$>$}
+
+\doxysubsection*{Pola danych}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_ab2c6b258f02add8fdf4cfc7c371dd772}{size}}
+\begin{DoxyCompactList}\small\item\em Wartość ta wskazuje na ilość bajtów, z których składa się drugi podnagłówek pliku mapy bitowej. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_a325272ddd9a962f05deb905101d25cbd}{width}}
+\begin{DoxyCompactList}\small\item\em Szerokość obrazu. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_a6ad4f820ce4e75cda0686fcaad5168be}{height}}
+\begin{DoxyCompactList}\small\item\em Wysokość obrazu. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_afa3d0a0b145590285485bc4be50144ff}{num\+Bit\+Planes}}
+\begin{DoxyCompactList}\small\item\em Liczba używanych przez obraz płaszczyzn kolorów. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_ac2f2b671756d940689073c4e69c4d2b1}{num\+Bits\+Per\+Plane}}
+\begin{DoxyCompactList}\small\item\em Ilość bitów na piksel. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_a0664dcf07854c3181733448eb4fa0a07}{comp}}
+\begin{DoxyCompactList}\small\item\em Parametr, wskazujący na typ kompresji (w tym przypadku 0). \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_a42539ea8650b094f66be7a689243c5ef}{image\+\_\+size}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_a51aabee6adf8a24eddf5d016c19db428}{Xres}}
+\begin{DoxyCompactList}\small\item\em Rozdzielczość pozioma. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_ab71f005d8b9326eb0170b49fb9283425}{Yres}}
+\begin{DoxyCompactList}\small\item\em Rozdzielczość pionowa. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_af55654ffbb622bafcd05adde9d12fc81}{colors\+\_\+used}}
+\begin{DoxyCompactList}\small\item\em Ilość kolorów w palecie. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_a53e70fae81d7b4357b508fbb85fa9e60}{colors\+\_\+importance\+\_\+rotation}}
+\begin{DoxyCompactList}\small\item\em Ilość ważnych kolorów w palecie (w tym przypadku 0; wszystkie kolory są jednokowo ważne). \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r_a5a6ed8c04a3db86066924b1a1bf4dad3}{reserved}}
+\begin{DoxyCompactList}\small\item\em Bajty zarezerwowane przez aplikację. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Struktura przechowująca nagłówek D\+IB. 
+
+\doxysubsection{Dokumentacja pól}
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_a53e70fae81d7b4357b508fbb85fa9e60}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_a53e70fae81d7b4357b508fbb85fa9e60}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!colors\_importance\_rotation@{colors\_importance\_rotation}}
+\index{colors\_importance\_rotation@{colors\_importance\_rotation}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{colors\_importance\_rotation}{colors\_importance\_rotation}}
+{\footnotesize\ttfamily uint16\+\_\+t colors\+\_\+importance\+\_\+rotation}
+
+
+
+Ilość ważnych kolorów w palecie (w tym przypadku 0; wszystkie kolory są jednokowo ważne). 
+
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_af55654ffbb622bafcd05adde9d12fc81}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_af55654ffbb622bafcd05adde9d12fc81}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!colors\_used@{colors\_used}}
+\index{colors\_used@{colors\_used}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{colors\_used}{colors\_used}}
+{\footnotesize\ttfamily uint32\+\_\+t colors\+\_\+used}
+
+
+
+Ilość kolorów w palecie. 
+
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_a0664dcf07854c3181733448eb4fa0a07}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_a0664dcf07854c3181733448eb4fa0a07}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!comp@{comp}}
+\index{comp@{comp}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{comp}{comp}}
+{\footnotesize\ttfamily uint32\+\_\+t comp}
+
+
+
+Parametr, wskazujący na typ kompresji (w tym przypadku 0). 
+
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_a6ad4f820ce4e75cda0686fcaad5168be}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_a6ad4f820ce4e75cda0686fcaad5168be}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!height@{height}}
+\index{height@{height}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily uint32\+\_\+t height}
+
+
+
+Wysokość obrazu. 
+
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_a42539ea8650b094f66be7a689243c5ef}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_a42539ea8650b094f66be7a689243c5ef}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!image\_size@{image\_size}}
+\index{image\_size@{image\_size}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{image\_size}{image\_size}}
+{\footnotesize\ttfamily uint32\+\_\+t image\+\_\+size}
+
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_afa3d0a0b145590285485bc4be50144ff}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_afa3d0a0b145590285485bc4be50144ff}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!numBitPlanes@{numBitPlanes}}
+\index{numBitPlanes@{numBitPlanes}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{numBitPlanes}{numBitPlanes}}
+{\footnotesize\ttfamily uint16\+\_\+t num\+Bit\+Planes}
+
+
+
+Liczba używanych przez obraz płaszczyzn kolorów. 
+
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_ac2f2b671756d940689073c4e69c4d2b1}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_ac2f2b671756d940689073c4e69c4d2b1}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!numBitsPerPlane@{numBitsPerPlane}}
+\index{numBitsPerPlane@{numBitsPerPlane}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{numBitsPerPlane}{numBitsPerPlane}}
+{\footnotesize\ttfamily uint16\+\_\+t num\+Bits\+Per\+Plane}
+
+
+
+Ilość bitów na piksel. 
+
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_a5a6ed8c04a3db86066924b1a1bf4dad3}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_a5a6ed8c04a3db86066924b1a1bf4dad3}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!reserved@{reserved}}
+\index{reserved@{reserved}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{reserved}{reserved}}
+{\footnotesize\ttfamily uint16\+\_\+t reserved}
+
+
+
+Bajty zarezerwowane przez aplikację. 
+
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_ab2c6b258f02add8fdf4cfc7c371dd772}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_ab2c6b258f02add8fdf4cfc7c371dd772}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!size@{size}}
+\index{size@{size}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily uint32\+\_\+t size}
+
+
+
+Wartość ta wskazuje na ilość bajtów, z których składa się drugi podnagłówek pliku mapy bitowej. 
+
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_a325272ddd9a962f05deb905101d25cbd}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_a325272ddd9a962f05deb905101d25cbd}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!width@{width}}
+\index{width@{width}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily uint32\+\_\+t width}
+
+
+
+Szerokość obrazu. 
+
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_a51aabee6adf8a24eddf5d016c19db428}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_a51aabee6adf8a24eddf5d016c19db428}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!Xres@{Xres}}
+\index{Xres@{Xres}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{Xres}{Xres}}
+{\footnotesize\ttfamily uint32\+\_\+t Xres}
+
+
+
+Rozdzielczość pozioma. 
+
+\mbox{\Hypertarget{struct_b_i_t_m_a_p_h_e_a_d_e_r_ab71f005d8b9326eb0170b49fb9283425}\label{struct_b_i_t_m_a_p_h_e_a_d_e_r_ab71f005d8b9326eb0170b49fb9283425}} 
+\index{BITMAPHEADER@{BITMAPHEADER}!Yres@{Yres}}
+\index{Yres@{Yres}!BITMAPHEADER@{BITMAPHEADER}}
+\doxysubsubsection{\texorpdfstring{Yres}{Yres}}
+{\footnotesize\ttfamily uint32\+\_\+t Yres}
+
+
+
+Rozdzielczość pionowa. 
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{bmp_8h}{bmp.\+h}}\end{DoxyCompactItemize}

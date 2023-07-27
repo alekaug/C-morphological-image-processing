@@ -1,0 +1,93 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {polish}{}
+\contentsline {chapter}{\numberline {1}Indeks struktur danych}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Struktury danych}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Indeks plików}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lista plików}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Dokumentacja struktur danych}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dokumentacja struktury B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}H\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ER}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Opis szczegółowy}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Dokumentacja pól}{6}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}colors\_importance\_rotation}{6}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}colors\_used}{6}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}comp}{6}{subsubsection.3.1.2.3}%
+\contentsline {subsubsection}{\numberline {3.1.2.4}height}{6}{subsubsection.3.1.2.4}%
+\contentsline {subsubsection}{\numberline {3.1.2.5}image\_size}{6}{subsubsection.3.1.2.5}%
+\contentsline {subsubsection}{\numberline {3.1.2.6}numBitPlanes}{7}{subsubsection.3.1.2.6}%
+\contentsline {subsubsection}{\numberline {3.1.2.7}numBitsPerPlane}{7}{subsubsection.3.1.2.7}%
+\contentsline {subsubsection}{\numberline {3.1.2.8}reserved}{7}{subsubsection.3.1.2.8}%
+\contentsline {subsubsection}{\numberline {3.1.2.9}size}{7}{subsubsection.3.1.2.9}%
+\contentsline {subsubsection}{\numberline {3.1.2.10}width}{7}{subsubsection.3.1.2.10}%
+\contentsline {subsubsection}{\numberline {3.1.2.11}Xres}{7}{subsubsection.3.1.2.11}%
+\contentsline {subsubsection}{\numberline {3.1.2.12}Yres}{8}{subsubsection.3.1.2.12}%
+\contentsline {section}{\numberline {3.2}Dokumentacja struktury B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}H\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ER}{8}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Opis szczegółowy}{8}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Dokumentacja pól}{8}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}offset}{8}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}r1}{9}{subsubsection.3.2.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}r2}{9}{subsubsection.3.2.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.2.4}s1}{9}{subsubsection.3.2.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.2.5}s2}{9}{subsubsection.3.2.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.2.6}size}{9}{subsubsection.3.2.2.6}%
+\contentsline {section}{\numberline {3.3}Dokumentacja struktury P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EL}{9}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Opis szczegółowy}{10}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Dokumentacja pól}{10}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}blue}{10}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}green}{10}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}red}{10}{subsubsection.3.3.2.3}%
+\contentsline {section}{\numberline {3.4}Dokumentacja struktury pixel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}structure}{11}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Opis szczegółowy}{11}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Dokumentacja pól}{11}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}next}{11}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}type}{11}{subsubsection.3.4.2.2}%
+\contentsline {chapter}{\numberline {4}Dokumentacja plików}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dokumentacja pliku bmp.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{13}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Opis szczegółowy}{14}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Dokumentacja definicji typów}{14}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}BITMAPHEADER}{14}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}BMPFILEHEADER}{14}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}PIXEL}{14}{subsubsection.4.1.2.3}%
+\contentsline {subsubsection}{\numberline {4.1.2.4}pixel\_structure}{14}{subsubsection.4.1.2.4}%
+\contentsline {section}{\numberline {4.2}Dokumentacja pliku functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{15}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Opis szczegółowy}{16}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Dokumentacja funkcji}{16}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}AllocateInputMemory()}{16}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}AllocateOutputMemory()}{16}{subsubsection.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.3}change\_pixel\_color()}{17}{subsubsection.4.2.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.2.4}check\_pixel\_color()}{17}{subsubsection.4.2.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.2.5}closing()}{18}{subsubsection.4.2.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.2.6}deallocate\_sieve()}{18}{subsubsection.4.2.2.6}%
+\contentsline {subsubsection}{\numberline {4.2.2.7}DeallocateInputMemory()}{18}{subsubsection.4.2.2.7}%
+\contentsline {subsubsection}{\numberline {4.2.2.8}DeallocateOutputMemory()}{19}{subsubsection.4.2.2.8}%
+\contentsline {subsubsection}{\numberline {4.2.2.9}load\_sieve()}{19}{subsubsection.4.2.2.9}%
+\contentsline {subsubsection}{\numberline {4.2.2.10}main\_point()}{19}{subsubsection.4.2.2.10}%
+\contentsline {subsubsection}{\numberline {4.2.2.11}opening()}{20}{subsubsection.4.2.2.11}%
+\contentsline {subsubsection}{\numberline {4.2.2.12}operation()}{20}{subsubsection.4.2.2.12}%
+\contentsline {subsubsection}{\numberline {4.2.2.13}ReadPixels()}{21}{subsubsection.4.2.2.13}%
+\contentsline {subsubsection}{\numberline {4.2.2.14}ReadToStructure()}{21}{subsubsection.4.2.2.14}%
+\contentsline {subsubsection}{\numberline {4.2.2.15}SaveBMPFile()}{21}{subsubsection.4.2.2.15}%
+\contentsline {subsubsection}{\numberline {4.2.2.16}WriteFromStructure()}{23}{subsubsection.4.2.2.16}%
+\contentsline {section}{\numberline {4.3}Dokumentacja pliku functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{23}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Opis szczegółowy}{24}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Dokumentacja funkcji}{24}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}AllocateInputMemory()}{24}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}AllocateOutputMemory()}{25}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}change\_pixel\_color()}{25}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.2.4}check\_pixel\_color()}{26}{subsubsection.4.3.2.4}%
+\contentsline {subsubsection}{\numberline {4.3.2.5}closing()}{26}{subsubsection.4.3.2.5}%
+\contentsline {subsubsection}{\numberline {4.3.2.6}deallocate\_sieve()}{26}{subsubsection.4.3.2.6}%
+\contentsline {subsubsection}{\numberline {4.3.2.7}DeallocateInputMemory()}{27}{subsubsection.4.3.2.7}%
+\contentsline {subsubsection}{\numberline {4.3.2.8}DeallocateOutputMemory()}{27}{subsubsection.4.3.2.8}%
+\contentsline {subsubsection}{\numberline {4.3.2.9}load\_sieve()}{28}{subsubsection.4.3.2.9}%
+\contentsline {subsubsection}{\numberline {4.3.2.10}main\_point()}{28}{subsubsection.4.3.2.10}%
+\contentsline {subsubsection}{\numberline {4.3.2.11}opening()}{28}{subsubsection.4.3.2.11}%
+\contentsline {subsubsection}{\numberline {4.3.2.12}operation()}{30}{subsubsection.4.3.2.12}%
+\contentsline {subsubsection}{\numberline {4.3.2.13}ReadPixels()}{30}{subsubsection.4.3.2.13}%
+\contentsline {subsubsection}{\numberline {4.3.2.14}ReadToStructure()}{31}{subsubsection.4.3.2.14}%
+\contentsline {subsubsection}{\numberline {4.3.2.15}SaveBMPFile()}{31}{subsubsection.4.3.2.15}%
+\contentsline {subsubsection}{\numberline {4.3.2.16}WriteFromStructure()}{32}{subsubsection.4.3.2.16}%
+\contentsline {section}{\numberline {4.4}Dokumentacja pliku main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{32}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Opis szczegółowy}{32}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Dokumentacja funkcji}{32}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}main()}{33}{subsubsection.4.4.2.1}%
+\contentsline {chapter}{Indeks}{35}{section*.10}%

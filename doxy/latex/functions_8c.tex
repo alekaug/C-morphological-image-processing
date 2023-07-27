@@ -1,0 +1,372 @@
+\hypertarget{functions_8c}{}\doxysection{Dokumentacja pliku functions.\+c}
+\label{functions_8c}\index{functions.c@{functions.c}}
+
+
+Plik nagłówkowy zawierający definicje funkcji.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$conio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}bmp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions.\+h\char`\"{}}\newline
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$$\ast$$\ast$ \mbox{\hyperlink{functions_8c_a560aef7e2cceaa16b6a05e6ab4d8cf54}{Allocate\+Input\+Memory}} (const uint32\+\_\+t $\ast$img\+Height, const uint32\+\_\+t $\ast$img\+Width)
+\begin{DoxyCompactList}\small\item\em Funkcja alokująca tyle pamięci, by pomieścić cały zakres kolorów (wysokość x szerokość x 3 składowe). \end{DoxyCompactList}\item 
+uint8\+\_\+t $\ast$$\ast$$\ast$ \mbox{\hyperlink{functions_8c_a3b99f073b454b8cb94e1a2655aa23b32}{Deallocate\+Input\+Memory}} (uint8\+\_\+t $\ast$$\ast$$\ast$image\+\_\+in, const uint32\+\_\+t $\ast$img\+Height, const uint32\+\_\+t $\ast$img\+Width)
+\begin{DoxyCompactList}\small\item\em Funkcja dealokująca całą pamięć zajętą przez funkcję Allocate\+Input\+Memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_ad1013f96157d9d76526f84bb1424db2f}{Read\+Pixels}} (uint8\+\_\+t $\ast$$\ast$$\ast$image\+\_\+in, const uint32\+\_\+t $\ast$img\+Height, const uint32\+\_\+t $\ast$img\+Width, const F\+I\+LE $\ast$input\+\_\+file, const uint32\+\_\+t $\ast$offset\+\_\+byte)
+\item 
+uint8\+\_\+t $\ast$$\ast$$\ast$ \mbox{\hyperlink{functions_8c_abe7f534f56ff2ebe84bd3966c3c6cdfc}{Allocate\+Output\+Memory}} (uint8\+\_\+t $\ast$$\ast$$\ast$image\+\_\+in, const uint32\+\_\+t $\ast$img\+Height, const uint32\+\_\+t $\ast$img\+Width)
+\begin{DoxyCompactList}\small\item\em Funkcja alokująca tyle pamięci, by pomieścić cały zakres kolorów dla pliku wyjściowego. \end{DoxyCompactList}\item 
+uint8\+\_\+t $\ast$$\ast$$\ast$ \mbox{\hyperlink{functions_8c_a58cb1948b72ea1d3a27c369dcbad5b2f}{Deallocate\+Output\+Memory}} (uint8\+\_\+t $\ast$$\ast$$\ast$image\+\_\+out, const uint8\+\_\+t $\ast$img\+Height, const uint8\+\_\+t $\ast$img\+Width)
+\begin{DoxyCompactList}\small\item\em Funkcja dealokująca całą pamięć zajętą przez funkcję Allocate\+Output\+Memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_a649eee34a5f369069c73a14072558338}{Save\+B\+M\+P\+File}} (const uint32\+\_\+t $\ast$img\+Height, const uint32\+\_\+t $\ast$img\+Width, const uint8\+\_\+t $\ast$$\ast$$\ast$image\+\_\+out, const F\+I\+LE $\ast$output\+\_\+file)
+\begin{DoxyCompactList}\small\item\em Funkcja zapisująca bajty składowych kolorów pikseli do pliku wyjściowego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_a0d82755f1653333cff7d92985aca4be8}{Read\+To\+Structure}} (const \mbox{\hyperlink{struct_b_m_p_f_i_l_e_h_e_a_d_e_r}{B\+M\+P\+F\+I\+L\+E\+H\+E\+A\+D\+ER}} $\ast$File\+Header, const \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r}{B\+I\+T\+M\+A\+P\+H\+E\+A\+D\+ER}} $\ast$Header, const F\+I\+LE $\ast$input\+\_\+file)
+\begin{DoxyCompactList}\small\item\em Funkcja zapisująca do struktury dane nagłówka pliku, zawierającego informacje nt. obrazu, m.\+in. rozdzielczość, wysokość, szerokość, waga pliku, etc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_af16082e0fafbf9d3414c49d747f887d5}{Write\+From\+Structure}} (const \mbox{\hyperlink{struct_b_m_p_f_i_l_e_h_e_a_d_e_r}{B\+M\+P\+F\+I\+L\+E\+H\+E\+A\+D\+ER}} $\ast$File\+Header, const \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r}{B\+I\+T\+M\+A\+P\+H\+E\+A\+D\+ER}} $\ast$Header, const F\+I\+LE $\ast$output\+\_\+file)
+\begin{DoxyCompactList}\small\item\em Funkcja zapisująca do pliku wyjściowego pozyskane przez funkcję Read\+To\+Structure dane, zapisane do struktury. \end{DoxyCompactList}\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{functions_8c_a3ea3aae49c3b635a4436fba467bbc221}{change\+\_\+pixel\+\_\+color}} (uint8\+\_\+t $\ast$pixel, uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Funkcja zamienia kolor danego przez adres piksela. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{functions_8c_a90e79aa710e9f35e9cfe08a10abaaa23}{check\+\_\+pixel\+\_\+color}} (uint8\+\_\+t $\ast$pixel)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza jakiego koloru jest podany piksel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_adc6ae4afa7a8dc295f15bf27622eacbc}{operation}} (const uint8\+\_\+t type, uint8\+\_\+t $\ast$$\ast$$\ast$image\+\_\+in, uint8\+\_\+t $\ast$$\ast$$\ast$image\+\_\+out, uint32\+\_\+t width, uint32\+\_\+t height, \mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}} $\ast$sieve, uint32\+\_\+t $\ast$coordinates)
+\begin{DoxyCompactList}\small\item\em Główny algorytm, który odpowiada za wykonanie operacji morfologicznych na obrazie. Funkcja dopasowuje strukturę sita do piksela modyfikowanego tak, by można było sprawdzić warunki zamiany piksela modyfikowanego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_a29976ea6082762a7fbd9e4e771d6af84}{opening}} (uint8\+\_\+t $\ast$$\ast$$\ast$image\+\_\+in, uint8\+\_\+t $\ast$$\ast$$\ast$image\+\_\+out, uint32\+\_\+t width, uint32\+\_\+t height, \mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}} $\ast$sieve, uint32\+\_\+t $\ast$coordinates)
+\begin{DoxyCompactList}\small\item\em Funkcja otwarcia morfologicznego, która wykonuje na obrazie w odpowiedniej kolejności operacje w celu usunięcia szczegółow z obrazu (erozja -\/$>$ dylatacja). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_afcfc3d6fc3d4b054564de48b06bc9a7e}{closing}} (uint8\+\_\+t $\ast$$\ast$$\ast$image\+\_\+in, uint8\+\_\+t $\ast$$\ast$$\ast$image\+\_\+out, uint32\+\_\+t width, uint32\+\_\+t height, \mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}} $\ast$sieve, uint32\+\_\+t $\ast$coordinates)
+\begin{DoxyCompactList}\small\item\em Funkcja zamknięcia morfologicznego, która wykonuje na obrazie w odpowiedniej kolejności operacje w celu \char`\"{}zamalowania\char`\"{} niewypełnionych do końca szczelin (dylatacja-\/$>$ erozja). Wymagany efekt ściśle zależy of elementu strukturalnego. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}} $\ast$ \mbox{\hyperlink{functions_8c_a6842669a6712bf225a576380782a5f9b}{load\+\_\+sieve}} (F\+I\+LE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Funkcja wczytująca do specjalnej struktury element strukturalny. \end{DoxyCompactList}\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{functions_8c_afbb0e7eebdb03b5ce773ab1e2082e745}{main\+\_\+point}} (\mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}} $\ast$sieve)
+\begin{DoxyCompactList}\small\item\em Algorytm wykrywający współrzędne piksela modyfikowanego (głównego) elementu strukturalnego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_a81eca269735cafcf4f34326e152f0ffe}{deallocate\+\_\+sieve}} (\mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}} $\ast$sieve)
+\begin{DoxyCompactList}\small\item\em Funkcja dealokująca pamięć, potrzebną by wczytać element strukturalny. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik nagłówkowy zawierający definicje funkcji. 
+
+\begin{DoxyAuthor}{Autor}
+Aleksander Augustyniak 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{functions_8c_a560aef7e2cceaa16b6a05e6ab4d8cf54}\label{functions_8c_a560aef7e2cceaa16b6a05e6ab4d8cf54}} 
+\index{functions.c@{functions.c}!AllocateInputMemory@{AllocateInputMemory}}
+\index{AllocateInputMemory@{AllocateInputMemory}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{AllocateInputMemory()}{AllocateInputMemory()}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$$\ast$$\ast$ Allocate\+Input\+Memory (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t $\ast$}]{img\+Height,  }\item[{const uint32\+\_\+t $\ast$}]{img\+Width }\end{DoxyParamCaption})}
+
+
+
+Funkcja alokująca tyle pamięci, by pomieścić cały zakres kolorów (wysokość x szerokość x 3 składowe). 
+
+
+\begin{DoxyParams}{Parametry}
+{\em img\+Height} & wskaźnik na wysokość obrazu. \\
+\hline
+{\em img\+Width} & wskaźnik na szerokość obrazu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaźnik do adresu schowka na dane wejściowe lub N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_abe7f534f56ff2ebe84bd3966c3c6cdfc}\label{functions_8c_abe7f534f56ff2ebe84bd3966c3c6cdfc}} 
+\index{functions.c@{functions.c}!AllocateOutputMemory@{AllocateOutputMemory}}
+\index{AllocateOutputMemory@{AllocateOutputMemory}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{AllocateOutputMemory()}{AllocateOutputMemory()}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$$\ast$$\ast$ Allocate\+Output\+Memory (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$$\ast$$\ast$}]{image\+\_\+in,  }\item[{const uint32\+\_\+t $\ast$}]{img\+Height,  }\item[{const uint32\+\_\+t $\ast$}]{img\+Width }\end{DoxyParamCaption})}
+
+
+
+Funkcja alokująca tyle pamięci, by pomieścić cały zakres kolorów dla pliku wyjściowego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em image\+\_\+in} & wskaźnik do początku tablicy na dane wejściowe. \\
+\hline
+{\em img\+Height} & wskaźnik na wysokość obrazu. \\
+\hline
+{\em img\+Width} & wskaźnik na szerokość obrazu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaźnik do adresu schowka na dane wyjściowe lub N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a3ea3aae49c3b635a4436fba467bbc221}\label{functions_8c_a3ea3aae49c3b635a4436fba467bbc221}} 
+\index{functions.c@{functions.c}!change\_pixel\_color@{change\_pixel\_color}}
+\index{change\_pixel\_color@{change\_pixel\_color}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{change\_pixel\_color()}{change\_pixel\_color()}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ change\+\_\+pixel\+\_\+color (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{pixel,  }\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Funkcja zamienia kolor danego przez adres piksela. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em pixel} & wskaźnik do piksela edytowanego. \\
+\hline
+{\em color} & współczynnik mówiący o tym, na jaki kolor ma być zamieniony dany piksel (1\+: biały / 0\+: czarny). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaźnik na piksel zmodyfikowany. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a90e79aa710e9f35e9cfe08a10abaaa23}\label{functions_8c_a90e79aa710e9f35e9cfe08a10abaaa23}} 
+\index{functions.c@{functions.c}!check\_pixel\_color@{check\_pixel\_color}}
+\index{check\_pixel\_color@{check\_pixel\_color}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{check\_pixel\_color()}{check\_pixel\_color()}}
+{\footnotesize\ttfamily uint8\+\_\+t check\+\_\+pixel\+\_\+color (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{pixel }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdza jakiego koloru jest podany piksel. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em pixel} & wskaźnik do piksela, którego poszczególne składowego koloru mają być sprawdzone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+0 jeżeli wszystkie składowe koloru piksela są równe zero. W przeciwnym wypadku 1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_afcfc3d6fc3d4b054564de48b06bc9a7e}\label{functions_8c_afcfc3d6fc3d4b054564de48b06bc9a7e}} 
+\index{functions.c@{functions.c}!closing@{closing}}
+\index{closing@{closing}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{closing()}{closing()}}
+{\footnotesize\ttfamily void closing (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$$\ast$$\ast$}]{image\+\_\+in,  }\item[{uint8\+\_\+t $\ast$$\ast$$\ast$}]{image\+\_\+out,  }\item[{uint32\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{height,  }\item[{\mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}} $\ast$}]{sieve,  }\item[{uint32\+\_\+t $\ast$}]{coordinates }\end{DoxyParamCaption})}
+
+
+
+Funkcja zamknięcia morfologicznego, która wykonuje na obrazie w odpowiedniej kolejności operacje w celu \char`\"{}zamalowania\char`\"{} niewypełnionych do końca szczelin (dylatacja-\/$>$ erozja). Wymagany efekt ściśle zależy of elementu strukturalnego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em image\+\_\+in} & wskaźnik do początku tablicy na dane wejściowe. \\
+\hline
+{\em width} & szerokość obrazu. \\
+\hline
+{\em width} & wysokość obrazu. \\
+\hline
+{\em sieve} & wskaźnik na strukturę zawierającą dane elementu strukturalnego. \\
+\hline
+{\em coordinates} & tablica zawierająca współrzędne położenia piksela modyfikowanego (głównego). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_a81eca269735cafcf4f34326e152f0ffe}\label{functions_8c_a81eca269735cafcf4f34326e152f0ffe}} 
+\index{functions.c@{functions.c}!deallocate\_sieve@{deallocate\_sieve}}
+\index{deallocate\_sieve@{deallocate\_sieve}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{deallocate\_sieve()}{deallocate\_sieve()}}
+{\footnotesize\ttfamily void deallocate\+\_\+sieve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}} $\ast$}]{sieve }\end{DoxyParamCaption})}
+
+
+
+Funkcja dealokująca pamięć, potrzebną by wczytać element strukturalny. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em sieve} & wskaźnik na dynamiczną listę jednokierunkową zawierającą element strukturalny. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_a3b99f073b454b8cb94e1a2655aa23b32}\label{functions_8c_a3b99f073b454b8cb94e1a2655aa23b32}} 
+\index{functions.c@{functions.c}!DeallocateInputMemory@{DeallocateInputMemory}}
+\index{DeallocateInputMemory@{DeallocateInputMemory}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{DeallocateInputMemory()}{DeallocateInputMemory()}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$$\ast$$\ast$ Deallocate\+Input\+Memory (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$$\ast$$\ast$}]{image\+\_\+in,  }\item[{const uint32\+\_\+t $\ast$}]{img\+Height,  }\item[{const uint32\+\_\+t $\ast$}]{img\+Width }\end{DoxyParamCaption})}
+
+
+
+Funkcja dealokująca całą pamięć zajętą przez funkcję Allocate\+Input\+Memory. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em image\+\_\+in} & wskaźnik do początku tablicy na dane wejściowe. \\
+\hline
+{\em img\+Height} & wskaźnik na wysokość obrazu. \\
+\hline
+{\em img\+Width} & wskaźnik na szerokość obrazu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a58cb1948b72ea1d3a27c369dcbad5b2f}\label{functions_8c_a58cb1948b72ea1d3a27c369dcbad5b2f}} 
+\index{functions.c@{functions.c}!DeallocateOutputMemory@{DeallocateOutputMemory}}
+\index{DeallocateOutputMemory@{DeallocateOutputMemory}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{DeallocateOutputMemory()}{DeallocateOutputMemory()}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$$\ast$$\ast$ Deallocate\+Output\+Memory (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$$\ast$$\ast$}]{image\+\_\+out,  }\item[{const uint8\+\_\+t $\ast$}]{img\+Height,  }\item[{const uint8\+\_\+t $\ast$}]{img\+Width }\end{DoxyParamCaption})}
+
+
+
+Funkcja dealokująca całą pamięć zajętą przez funkcję Allocate\+Output\+Memory. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em image\+\_\+out} & wskaźnik do początku tablicy na dane wejściowe. \\
+\hline
+{\em img\+Height} & wskaźnik na wysokość obrazu. \\
+\hline
+{\em img\+Width} & wskaźnik na szerokość obrazu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a6842669a6712bf225a576380782a5f9b}\label{functions_8c_a6842669a6712bf225a576380782a5f9b}} 
+\index{functions.c@{functions.c}!load\_sieve@{load\_sieve}}
+\index{load\_sieve@{load\_sieve}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{load\_sieve()}{load\_sieve()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}}$\ast$ load\+\_\+sieve (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{stream }\end{DoxyParamCaption})}
+
+
+
+Funkcja wczytująca do specjalnej struktury element strukturalny. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em stream} & wskaźnik do pliku, który zawiera element strukturalny. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaźnik na dynamiczną listę jednokierunkową zawierającą element strukturalny. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_afbb0e7eebdb03b5ce773ab1e2082e745}\label{functions_8c_afbb0e7eebdb03b5ce773ab1e2082e745}} 
+\index{functions.c@{functions.c}!main\_point@{main\_point}}
+\index{main\_point@{main\_point}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{main\_point()}{main\_point()}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ main\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}} $\ast$}]{sieve }\end{DoxyParamCaption})}
+
+
+
+Algorytm wykrywający współrzędne piksela modyfikowanego (głównego) elementu strukturalnego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em sieve} & wskaźnik na dynamiczną listę jednokierunkową zawierającą element strukturalny. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaźnik na tablicę współrzędnych punktu głównego elementu strukturalnego. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a29976ea6082762a7fbd9e4e771d6af84}\label{functions_8c_a29976ea6082762a7fbd9e4e771d6af84}} 
+\index{functions.c@{functions.c}!opening@{opening}}
+\index{opening@{opening}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{opening()}{opening()}}
+{\footnotesize\ttfamily void opening (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$$\ast$$\ast$}]{image\+\_\+in,  }\item[{uint8\+\_\+t $\ast$$\ast$$\ast$}]{image\+\_\+out,  }\item[{uint32\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{height,  }\item[{\mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}} $\ast$}]{sieve,  }\item[{uint32\+\_\+t $\ast$}]{coordinates }\end{DoxyParamCaption})}
+
+
+
+Funkcja otwarcia morfologicznego, która wykonuje na obrazie w odpowiedniej kolejności operacje w celu usunięcia szczegółow z obrazu (erozja -\/$>$ dylatacja). 
+
+
+\begin{DoxyParams}{Parametry}
+{\em image\+\_\+in} & wskaźnik do początku tablicy na dane wejściowe. \\
+\hline
+{\em width} & szerokość obrazu. \\
+\hline
+{\em width} & wysokość obrazu. \\
+\hline
+{\em sieve} & wskaźnik na strukturę zawierającą dane elementu strukturalnego. \\
+\hline
+{\em coordinates} & tablica zawierająca współrzędne położenia piksela modyfikowanego (głównego). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_adc6ae4afa7a8dc295f15bf27622eacbc}\label{functions_8c_adc6ae4afa7a8dc295f15bf27622eacbc}} 
+\index{functions.c@{functions.c}!operation@{operation}}
+\index{operation@{operation}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{operation()}{operation()}}
+{\footnotesize\ttfamily void operation (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{type,  }\item[{uint8\+\_\+t $\ast$$\ast$$\ast$}]{image\+\_\+in,  }\item[{uint8\+\_\+t $\ast$$\ast$$\ast$}]{image\+\_\+out,  }\item[{uint32\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{height,  }\item[{\mbox{\hyperlink{structpixel__structure}{pixel\+\_\+structure}} $\ast$}]{sieve,  }\item[{uint32\+\_\+t $\ast$}]{coordinates }\end{DoxyParamCaption})}
+
+
+
+Główny algorytm, który odpowiada za wykonanie operacji morfologicznych na obrazie. Funkcja dopasowuje strukturę sita do piksela modyfikowanego tak, by można było sprawdzić warunki zamiany piksela modyfikowanego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em type} & znak warunkujący operację, która ma być wykonana przez funkcję (\textquotesingle{}e\textquotesingle{} – erozja; \textquotesingle{}d\textquotesingle{} – dylatacja). \\
+\hline
+{\em image\+\_\+in} & wskaźnik do początku tablicy na dane wejściowe. \\
+\hline
+{\em image\+\_\+out} & wskaźnik do początku tablicy na dane wyjściowe. \\
+\hline
+{\em width} & szerokość obrazu. \\
+\hline
+{\em width} & wysokość obrazu. \\
+\hline
+{\em sieve} & wskaźnik na strukturę zawierającą dane elementu strukturalnego. \\
+\hline
+{\em coordinates} & tablica zawierająca współrzędne położenia piksela modyfikowanego (głównego). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_ad1013f96157d9d76526f84bb1424db2f}\label{functions_8c_ad1013f96157d9d76526f84bb1424db2f}} 
+\index{functions.c@{functions.c}!ReadPixels@{ReadPixels}}
+\index{ReadPixels@{ReadPixels}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{ReadPixels()}{ReadPixels()}}
+{\footnotesize\ttfamily void Read\+Pixels (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$$\ast$$\ast$}]{image\+\_\+in,  }\item[{const uint32\+\_\+t $\ast$}]{img\+Height,  }\item[{const uint32\+\_\+t $\ast$}]{img\+Width,  }\item[{const F\+I\+LE $\ast$}]{input\+\_\+file,  }\item[{const uint32\+\_\+t $\ast$}]{offset\+\_\+byte }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions_8c_a0d82755f1653333cff7d92985aca4be8}\label{functions_8c_a0d82755f1653333cff7d92985aca4be8}} 
+\index{functions.c@{functions.c}!ReadToStructure@{ReadToStructure}}
+\index{ReadToStructure@{ReadToStructure}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{ReadToStructure()}{ReadToStructure()}}
+{\footnotesize\ttfamily void Read\+To\+Structure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_b_m_p_f_i_l_e_h_e_a_d_e_r}{B\+M\+P\+F\+I\+L\+E\+H\+E\+A\+D\+ER}} $\ast$}]{File\+Header,  }\item[{const \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r}{B\+I\+T\+M\+A\+P\+H\+E\+A\+D\+ER}} $\ast$}]{Header,  }\item[{const F\+I\+LE $\ast$}]{input\+\_\+file }\end{DoxyParamCaption})}
+
+
+
+Funkcja zapisująca do struktury dane nagłówka pliku, zawierającego informacje nt. obrazu, m.\+in. rozdzielczość, wysokość, szerokość, waga pliku, etc. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em File\+Header} & wskaźnik na podstrukturę mówiąca o tym, czy plik rzeczywiście jest plikiem mapy bitowej. Podstruktura mówi m.\+in. od którego bajtu zaczynają się piksele. \\
+\hline
+{\em Header} & wskaźnik na podstrukturę, której dane opisują wymiary obrazu. Podstruktura zawiera przede wszystkim informacje techniczne obrazu. \\
+\hline
+{\em input\+\_\+file} & wskaźnik na plik wejściowy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_a649eee34a5f369069c73a14072558338}\label{functions_8c_a649eee34a5f369069c73a14072558338}} 
+\index{functions.c@{functions.c}!SaveBMPFile@{SaveBMPFile}}
+\index{SaveBMPFile@{SaveBMPFile}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{SaveBMPFile()}{SaveBMPFile()}}
+{\footnotesize\ttfamily void Save\+B\+M\+P\+File (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t $\ast$}]{img\+Height,  }\item[{const uint32\+\_\+t $\ast$}]{img\+Width,  }\item[{const uint8\+\_\+t $\ast$$\ast$$\ast$}]{image\+\_\+out,  }\item[{const F\+I\+LE $\ast$}]{output\+\_\+file }\end{DoxyParamCaption})}
+
+
+
+Funkcja zapisująca bajty składowych kolorów pikseli do pliku wyjściowego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em img\+Height} & wskaźnik na wysokość obrazu. \\
+\hline
+{\em img\+Width} & wskaźnik na szerokość obrazu. \\
+\hline
+{\em image\+\_\+out} & wskaźnik do początku tablicy na dane wyjściowe. \\
+\hline
+{\em output\+\_\+file} & wskaźnik na plik wyjściowy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_af16082e0fafbf9d3414c49d747f887d5}\label{functions_8c_af16082e0fafbf9d3414c49d747f887d5}} 
+\index{functions.c@{functions.c}!WriteFromStructure@{WriteFromStructure}}
+\index{WriteFromStructure@{WriteFromStructure}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{WriteFromStructure()}{WriteFromStructure()}}
+{\footnotesize\ttfamily void Write\+From\+Structure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_b_m_p_f_i_l_e_h_e_a_d_e_r}{B\+M\+P\+F\+I\+L\+E\+H\+E\+A\+D\+ER}} $\ast$}]{File\+Header,  }\item[{const \mbox{\hyperlink{struct_b_i_t_m_a_p_h_e_a_d_e_r}{B\+I\+T\+M\+A\+P\+H\+E\+A\+D\+ER}} $\ast$}]{Header,  }\item[{const F\+I\+LE $\ast$}]{output\+\_\+file }\end{DoxyParamCaption})}
+
+
+
+Funkcja zapisująca do pliku wyjściowego pozyskane przez funkcję Read\+To\+Structure dane, zapisane do struktury. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em File\+Header} & wskaźnik na podstrukturę mówiąca o tym, czy plik rzeczywiście jest plikiem mapy bitowej. Podstruktura mówi m.\+in. od którego bajtu zaczynają się piksele. \\
+\hline
+{\em Header} & wskaźnik na podstrukturę, której dane opisują wymiary obrazu. Podstruktura zawiera przede wszystkim informacje techniczne obrazu. \\
+\hline
+{\em output\+\_\+file} & wskaźnik na plik wyjściowy. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,847 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Operacje morfologiczne na obrazie: Dokumentacja pliku functions.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Operacje morfologiczne na obrazie
+   &#160;<span id="projectnumber">0.97</span>
+   </div>
+   <div id="projectbrief">Program przetwarzający obraz cyfrowy zawarty w mapie bitowej.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku functions.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Plik nagłówkowy zawierający definicje funkcji.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;conio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;inttypes.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="bmp_8h_source.html">bmp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="functions_8h_source.html">functions.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a560aef7e2cceaa16b6a05e6ab4d8cf54"><td class="memItemLeft" align="right" valign="top">uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a560aef7e2cceaa16b6a05e6ab4d8cf54">AllocateInputMemory</a> (const uint32_t *imgHeight, const uint32_t *imgWidth)</td></tr>
+<tr class="memdesc:a560aef7e2cceaa16b6a05e6ab4d8cf54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja alokująca tyle pamięci, by pomieścić cały zakres kolorów (wysokość x szerokość x 3 składowe).  <a href="functions_8c.html#a560aef7e2cceaa16b6a05e6ab4d8cf54">Więcej...</a><br /></td></tr>
+<tr class="separator:a560aef7e2cceaa16b6a05e6ab4d8cf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b99f073b454b8cb94e1a2655aa23b32"><td class="memItemLeft" align="right" valign="top">uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a3b99f073b454b8cb94e1a2655aa23b32">DeallocateInputMemory</a> (uint8_t ***image_in, const uint32_t *imgHeight, const uint32_t *imgWidth)</td></tr>
+<tr class="memdesc:a3b99f073b454b8cb94e1a2655aa23b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dealokująca całą pamięć zajętą przez funkcję AllocateInputMemory.  <a href="functions_8c.html#a3b99f073b454b8cb94e1a2655aa23b32">Więcej...</a><br /></td></tr>
+<tr class="separator:a3b99f073b454b8cb94e1a2655aa23b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1013f96157d9d76526f84bb1424db2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#ad1013f96157d9d76526f84bb1424db2f">ReadPixels</a> (uint8_t ***image_in, const uint32_t *imgHeight, const uint32_t *imgWidth, const FILE *input_file, const uint32_t *offset_byte)</td></tr>
+<tr class="separator:ad1013f96157d9d76526f84bb1424db2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7f534f56ff2ebe84bd3966c3c6cdfc"><td class="memItemLeft" align="right" valign="top">uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#abe7f534f56ff2ebe84bd3966c3c6cdfc">AllocateOutputMemory</a> (uint8_t ***image_in, const uint32_t *imgHeight, const uint32_t *imgWidth)</td></tr>
+<tr class="memdesc:abe7f534f56ff2ebe84bd3966c3c6cdfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja alokująca tyle pamięci, by pomieścić cały zakres kolorów dla pliku wyjściowego.  <a href="functions_8c.html#abe7f534f56ff2ebe84bd3966c3c6cdfc">Więcej...</a><br /></td></tr>
+<tr class="separator:abe7f534f56ff2ebe84bd3966c3c6cdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cb1948b72ea1d3a27c369dcbad5b2f"><td class="memItemLeft" align="right" valign="top">uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a58cb1948b72ea1d3a27c369dcbad5b2f">DeallocateOutputMemory</a> (uint8_t ***image_out, const uint8_t *imgHeight, const uint8_t *imgWidth)</td></tr>
+<tr class="memdesc:a58cb1948b72ea1d3a27c369dcbad5b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dealokująca całą pamięć zajętą przez funkcję AllocateOutputMemory.  <a href="functions_8c.html#a58cb1948b72ea1d3a27c369dcbad5b2f">Więcej...</a><br /></td></tr>
+<tr class="separator:a58cb1948b72ea1d3a27c369dcbad5b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649eee34a5f369069c73a14072558338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a649eee34a5f369069c73a14072558338">SaveBMPFile</a> (const uint32_t *imgHeight, const uint32_t *imgWidth, const uint8_t ***image_out, const FILE *output_file)</td></tr>
+<tr class="memdesc:a649eee34a5f369069c73a14072558338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zapisująca bajty składowych kolorów pikseli do pliku wyjściowego.  <a href="functions_8c.html#a649eee34a5f369069c73a14072558338">Więcej...</a><br /></td></tr>
+<tr class="separator:a649eee34a5f369069c73a14072558338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d82755f1653333cff7d92985aca4be8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a0d82755f1653333cff7d92985aca4be8">ReadToStructure</a> (const <a class="el" href="struct_b_m_p_f_i_l_e_h_e_a_d_e_r.html">BMPFILEHEADER</a> *FileHeader, const <a class="el" href="struct_b_i_t_m_a_p_h_e_a_d_e_r.html">BITMAPHEADER</a> *Header, const FILE *input_file)</td></tr>
+<tr class="memdesc:a0d82755f1653333cff7d92985aca4be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zapisująca do struktury dane nagłówka pliku, zawierającego informacje nt. obrazu, m.in. rozdzielczość, wysokość, szerokość, waga pliku, etc.  <a href="functions_8c.html#a0d82755f1653333cff7d92985aca4be8">Więcej...</a><br /></td></tr>
+<tr class="separator:a0d82755f1653333cff7d92985aca4be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16082e0fafbf9d3414c49d747f887d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#af16082e0fafbf9d3414c49d747f887d5">WriteFromStructure</a> (const <a class="el" href="struct_b_m_p_f_i_l_e_h_e_a_d_e_r.html">BMPFILEHEADER</a> *FileHeader, const <a class="el" href="struct_b_i_t_m_a_p_h_e_a_d_e_r.html">BITMAPHEADER</a> *Header, const FILE *output_file)</td></tr>
+<tr class="memdesc:af16082e0fafbf9d3414c49d747f887d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zapisująca do pliku wyjściowego pozyskane przez funkcję ReadToStructure dane, zapisane do struktury.  <a href="functions_8c.html#af16082e0fafbf9d3414c49d747f887d5">Więcej...</a><br /></td></tr>
+<tr class="separator:af16082e0fafbf9d3414c49d747f887d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea3aae49c3b635a4436fba467bbc221"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a3ea3aae49c3b635a4436fba467bbc221">change_pixel_color</a> (uint8_t *pixel, uint8_t color)</td></tr>
+<tr class="memdesc:a3ea3aae49c3b635a4436fba467bbc221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zamienia kolor danego przez adres piksela.  <a href="functions_8c.html#a3ea3aae49c3b635a4436fba467bbc221">Więcej...</a><br /></td></tr>
+<tr class="separator:a3ea3aae49c3b635a4436fba467bbc221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e79aa710e9f35e9cfe08a10abaaa23"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a90e79aa710e9f35e9cfe08a10abaaa23">check_pixel_color</a> (uint8_t *pixel)</td></tr>
+<tr class="memdesc:a90e79aa710e9f35e9cfe08a10abaaa23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdza jakiego koloru jest podany piksel.  <a href="functions_8c.html#a90e79aa710e9f35e9cfe08a10abaaa23">Więcej...</a><br /></td></tr>
+<tr class="separator:a90e79aa710e9f35e9cfe08a10abaaa23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6ae4afa7a8dc295f15bf27622eacbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#adc6ae4afa7a8dc295f15bf27622eacbc">operation</a> (const uint8_t type, uint8_t ***image_in, uint8_t ***image_out, uint32_t width, uint32_t height, <a class="el" href="structpixel__structure.html">pixel_structure</a> *sieve, uint32_t *coordinates)</td></tr>
+<tr class="memdesc:adc6ae4afa7a8dc295f15bf27622eacbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Główny algorytm, który odpowiada za wykonanie operacji morfologicznych na obrazie. Funkcja dopasowuje strukturę sita do piksela modyfikowanego tak, by można było sprawdzić warunki zamiany piksela modyfikowanego.  <a href="functions_8c.html#adc6ae4afa7a8dc295f15bf27622eacbc">Więcej...</a><br /></td></tr>
+<tr class="separator:adc6ae4afa7a8dc295f15bf27622eacbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29976ea6082762a7fbd9e4e771d6af84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a29976ea6082762a7fbd9e4e771d6af84">opening</a> (uint8_t ***image_in, uint8_t ***image_out, uint32_t width, uint32_t height, <a class="el" href="structpixel__structure.html">pixel_structure</a> *sieve, uint32_t *coordinates)</td></tr>
+<tr class="memdesc:a29976ea6082762a7fbd9e4e771d6af84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja otwarcia morfologicznego, która wykonuje na obrazie w odpowiedniej kolejności operacje w celu usunięcia szczegółow z obrazu (erozja -&gt; dylatacja).  <a href="functions_8c.html#a29976ea6082762a7fbd9e4e771d6af84">Więcej...</a><br /></td></tr>
+<tr class="separator:a29976ea6082762a7fbd9e4e771d6af84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfc3d6fc3d4b054564de48b06bc9a7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#afcfc3d6fc3d4b054564de48b06bc9a7e">closing</a> (uint8_t ***image_in, uint8_t ***image_out, uint32_t width, uint32_t height, <a class="el" href="structpixel__structure.html">pixel_structure</a> *sieve, uint32_t *coordinates)</td></tr>
+<tr class="memdesc:afcfc3d6fc3d4b054564de48b06bc9a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zamknięcia morfologicznego, która wykonuje na obrazie w odpowiedniej kolejności operacje w celu "zamalowania" niewypełnionych do końca szczelin (dylatacja-&gt; erozja). Wymagany efekt ściśle zależy of elementu strukturalnego.  <a href="functions_8c.html#afcfc3d6fc3d4b054564de48b06bc9a7e">Więcej...</a><br /></td></tr>
+<tr class="separator:afcfc3d6fc3d4b054564de48b06bc9a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6842669a6712bf225a576380782a5f9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpixel__structure.html">pixel_structure</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a6842669a6712bf225a576380782a5f9b">load_sieve</a> (FILE *stream)</td></tr>
+<tr class="memdesc:a6842669a6712bf225a576380782a5f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wczytująca do specjalnej struktury element strukturalny.  <a href="functions_8c.html#a6842669a6712bf225a576380782a5f9b">Więcej...</a><br /></td></tr>
+<tr class="separator:a6842669a6712bf225a576380782a5f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb0e7eebdb03b5ce773ab1e2082e745"><td class="memItemLeft" align="right" valign="top">uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#afbb0e7eebdb03b5ce773ab1e2082e745">main_point</a> (<a class="el" href="structpixel__structure.html">pixel_structure</a> *sieve)</td></tr>
+<tr class="memdesc:afbb0e7eebdb03b5ce773ab1e2082e745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorytm wykrywający współrzędne piksela modyfikowanego (głównego) elementu strukturalnego.  <a href="functions_8c.html#afbb0e7eebdb03b5ce773ab1e2082e745">Więcej...</a><br /></td></tr>
+<tr class="separator:afbb0e7eebdb03b5ce773ab1e2082e745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81eca269735cafcf4f34326e152f0ffe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a81eca269735cafcf4f34326e152f0ffe">deallocate_sieve</a> (<a class="el" href="structpixel__structure.html">pixel_structure</a> *sieve)</td></tr>
+<tr class="memdesc:a81eca269735cafcf4f34326e152f0ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dealokująca pamięć, potrzebną by wczytać element strukturalny.  <a href="functions_8c.html#a81eca269735cafcf4f34326e152f0ffe">Więcej...</a><br /></td></tr>
+<tr class="separator:a81eca269735cafcf4f34326e152f0ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Plik nagłówkowy zawierający definicje funkcji. </p>
+<dl class="section author"><dt>Autor</dt><dd>Aleksander Augustyniak </dd></dl>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a560aef7e2cceaa16b6a05e6ab4d8cf54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560aef7e2cceaa16b6a05e6ab4d8cf54">&#9670;&nbsp;</a></span>AllocateInputMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t*** AllocateInputMemory </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>imgHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>imgWidth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja alokująca tyle pamięci, by pomieścić cały zakres kolorów (wysokość x szerokość x 3 składowe). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imgHeight</td><td>wskaźnik na wysokość obrazu. </td></tr>
+    <tr><td class="paramname">imgWidth</td><td>wskaźnik na szerokość obrazu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wskaźnik do adresu schowka na dane wejściowe lub NULL. </dd></dl>
+
+</div>
+</div>
+<a id="abe7f534f56ff2ebe84bd3966c3c6cdfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe7f534f56ff2ebe84bd3966c3c6cdfc">&#9670;&nbsp;</a></span>AllocateOutputMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t*** AllocateOutputMemory </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t ***&#160;</td>
+          <td class="paramname"><em>image_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>imgHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>imgWidth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja alokująca tyle pamięci, by pomieścić cały zakres kolorów dla pliku wyjściowego. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image_in</td><td>wskaźnik do początku tablicy na dane wejściowe. </td></tr>
+    <tr><td class="paramname">imgHeight</td><td>wskaźnik na wysokość obrazu. </td></tr>
+    <tr><td class="paramname">imgWidth</td><td>wskaźnik na szerokość obrazu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wskaźnik do adresu schowka na dane wyjściowe lub NULL. </dd></dl>
+
+</div>
+</div>
+<a id="a3ea3aae49c3b635a4436fba467bbc221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea3aae49c3b635a4436fba467bbc221">&#9670;&nbsp;</a></span>change_pixel_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* change_pixel_color </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pixel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja zamienia kolor danego przez adres piksela. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixel</td><td>wskaźnik do piksela edytowanego. </td></tr>
+    <tr><td class="paramname">color</td><td>współczynnik mówiący o tym, na jaki kolor ma być zamieniony dany piksel (1: biały / 0: czarny). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wskaźnik na piksel zmodyfikowany. </dd></dl>
+
+</div>
+</div>
+<a id="a90e79aa710e9f35e9cfe08a10abaaa23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e79aa710e9f35e9cfe08a10abaaa23">&#9670;&nbsp;</a></span>check_pixel_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t check_pixel_color </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pixel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja sprawdza jakiego koloru jest podany piksel. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixel</td><td>wskaźnik do piksela, którego poszczególne składowego koloru mają być sprawdzone. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>0 jeżeli wszystkie składowe koloru piksela są równe zero. W przeciwnym wypadku 1. </dd></dl>
+
+</div>
+</div>
+<a id="afcfc3d6fc3d4b054564de48b06bc9a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcfc3d6fc3d4b054564de48b06bc9a7e">&#9670;&nbsp;</a></span>closing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void closing </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t ***&#160;</td>
+          <td class="paramname"><em>image_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t ***&#160;</td>
+          <td class="paramname"><em>image_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpixel__structure.html">pixel_structure</a> *&#160;</td>
+          <td class="paramname"><em>sieve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>coordinates</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja zamknięcia morfologicznego, która wykonuje na obrazie w odpowiedniej kolejności operacje w celu "zamalowania" niewypełnionych do końca szczelin (dylatacja-&gt; erozja). Wymagany efekt ściśle zależy of elementu strukturalnego. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image_in</td><td>wskaźnik do początku tablicy na dane wejściowe. </td></tr>
+    <tr><td class="paramname">width</td><td>szerokość obrazu. </td></tr>
+    <tr><td class="paramname">width</td><td>wysokość obrazu. </td></tr>
+    <tr><td class="paramname">sieve</td><td>wskaźnik na strukturę zawierającą dane elementu strukturalnego. </td></tr>
+    <tr><td class="paramname">coordinates</td><td>tablica zawierająca współrzędne położenia piksela modyfikowanego (głównego). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81eca269735cafcf4f34326e152f0ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81eca269735cafcf4f34326e152f0ffe">&#9670;&nbsp;</a></span>deallocate_sieve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deallocate_sieve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpixel__structure.html">pixel_structure</a> *&#160;</td>
+          <td class="paramname"><em>sieve</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja dealokująca pamięć, potrzebną by wczytać element strukturalny. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sieve</td><td>wskaźnik na dynamiczną listę jednokierunkową zawierającą element strukturalny. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b99f073b454b8cb94e1a2655aa23b32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b99f073b454b8cb94e1a2655aa23b32">&#9670;&nbsp;</a></span>DeallocateInputMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t*** DeallocateInputMemory </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t ***&#160;</td>
+          <td class="paramname"><em>image_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>imgHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>imgWidth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja dealokująca całą pamięć zajętą przez funkcję AllocateInputMemory. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image_in</td><td>wskaźnik do początku tablicy na dane wejściowe. </td></tr>
+    <tr><td class="paramname">imgHeight</td><td>wskaźnik na wysokość obrazu. </td></tr>
+    <tr><td class="paramname">imgWidth</td><td>wskaźnik na szerokość obrazu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>NULL. </dd></dl>
+
+</div>
+</div>
+<a id="a58cb1948b72ea1d3a27c369dcbad5b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58cb1948b72ea1d3a27c369dcbad5b2f">&#9670;&nbsp;</a></span>DeallocateOutputMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t*** DeallocateOutputMemory </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t ***&#160;</td>
+          <td class="paramname"><em>image_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>imgHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>imgWidth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja dealokująca całą pamięć zajętą przez funkcję AllocateOutputMemory. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image_out</td><td>wskaźnik do początku tablicy na dane wejściowe. </td></tr>
+    <tr><td class="paramname">imgHeight</td><td>wskaźnik na wysokość obrazu. </td></tr>
+    <tr><td class="paramname">imgWidth</td><td>wskaźnik na szerokość obrazu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>NULL. </dd></dl>
+
+</div>
+</div>
+<a id="a6842669a6712bf225a576380782a5f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6842669a6712bf225a576380782a5f9b">&#9670;&nbsp;</a></span>load_sieve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpixel__structure.html">pixel_structure</a>* load_sieve </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja wczytująca do specjalnej struktury element strukturalny. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>wskaźnik do pliku, który zawiera element strukturalny. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wskaźnik na dynamiczną listę jednokierunkową zawierającą element strukturalny. </dd></dl>
+
+</div>
+</div>
+<a id="afbb0e7eebdb03b5ce773ab1e2082e745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb0e7eebdb03b5ce773ab1e2082e745">&#9670;&nbsp;</a></span>main_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t* main_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpixel__structure.html">pixel_structure</a> *&#160;</td>
+          <td class="paramname"><em>sieve</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Algorytm wykrywający współrzędne piksela modyfikowanego (głównego) elementu strukturalnego. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sieve</td><td>wskaźnik na dynamiczną listę jednokierunkową zawierającą element strukturalny. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wskaźnik na tablicę współrzędnych punktu głównego elementu strukturalnego. </dd></dl>
+
+</div>
+</div>
+<a id="a29976ea6082762a7fbd9e4e771d6af84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29976ea6082762a7fbd9e4e771d6af84">&#9670;&nbsp;</a></span>opening()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void opening </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t ***&#160;</td>
+          <td class="paramname"><em>image_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t ***&#160;</td>
+          <td class="paramname"><em>image_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpixel__structure.html">pixel_structure</a> *&#160;</td>
+          <td class="paramname"><em>sieve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>coordinates</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja otwarcia morfologicznego, która wykonuje na obrazie w odpowiedniej kolejności operacje w celu usunięcia szczegółow z obrazu (erozja -&gt; dylatacja). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image_in</td><td>wskaźnik do początku tablicy na dane wejściowe. </td></tr>
+    <tr><td class="paramname">width</td><td>szerokość obrazu. </td></tr>
+    <tr><td class="paramname">width</td><td>wysokość obrazu. </td></tr>
+    <tr><td class="paramname">sieve</td><td>wskaźnik na strukturę zawierającą dane elementu strukturalnego. </td></tr>
+    <tr><td class="paramname">coordinates</td><td>tablica zawierająca współrzędne położenia piksela modyfikowanego (głównego). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adc6ae4afa7a8dc295f15bf27622eacbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6ae4afa7a8dc295f15bf27622eacbc">&#9670;&nbsp;</a></span>operation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operation </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t ***&#160;</td>
+          <td class="paramname"><em>image_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t ***&#160;</td>
+          <td class="paramname"><em>image_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpixel__structure.html">pixel_structure</a> *&#160;</td>
+          <td class="paramname"><em>sieve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>coordinates</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Główny algorytm, który odpowiada za wykonanie operacji morfologicznych na obrazie. Funkcja dopasowuje strukturę sita do piksela modyfikowanego tak, by można było sprawdzić warunki zamiany piksela modyfikowanego. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>znak warunkujący operację, która ma być wykonana przez funkcję ('e' – erozja; 'd' – dylatacja). </td></tr>
+    <tr><td class="paramname">image_in</td><td>wskaźnik do początku tablicy na dane wejściowe. </td></tr>
+    <tr><td class="paramname">image_out</td><td>wskaźnik do początku tablicy na dane wyjściowe. </td></tr>
+    <tr><td class="paramname">width</td><td>szerokość obrazu. </td></tr>
+    <tr><td class="paramname">width</td><td>wysokość obrazu. </td></tr>
+    <tr><td class="paramname">sieve</td><td>wskaźnik na strukturę zawierającą dane elementu strukturalnego. </td></tr>
+    <tr><td class="paramname">coordinates</td><td>tablica zawierająca współrzędne położenia piksela modyfikowanego (głównego). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad1013f96157d9d76526f84bb1424db2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1013f96157d9d76526f84bb1424db2f">&#9670;&nbsp;</a></span>ReadPixels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadPixels </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t ***&#160;</td>
+          <td class="paramname"><em>image_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>imgHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>imgWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FILE *&#160;</td>
+          <td class="paramname"><em>input_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>offset_byte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d82755f1653333cff7d92985aca4be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d82755f1653333cff7d92985aca4be8">&#9670;&nbsp;</a></span>ReadToStructure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadToStructure </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_b_m_p_f_i_l_e_h_e_a_d_e_r.html">BMPFILEHEADER</a> *&#160;</td>
+          <td class="paramname"><em>FileHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_b_i_t_m_a_p_h_e_a_d_e_r.html">BITMAPHEADER</a> *&#160;</td>
+          <td class="paramname"><em>Header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FILE *&#160;</td>
+          <td class="paramname"><em>input_file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja zapisująca do struktury dane nagłówka pliku, zawierającego informacje nt. obrazu, m.in. rozdzielczość, wysokość, szerokość, waga pliku, etc. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">FileHeader</td><td>wskaźnik na podstrukturę mówiąca o tym, czy plik rzeczywiście jest plikiem mapy bitowej. Podstruktura mówi m.in. od którego bajtu zaczynają się piksele. </td></tr>
+    <tr><td class="paramname">Header</td><td>wskaźnik na podstrukturę, której dane opisują wymiary obrazu. Podstruktura zawiera przede wszystkim informacje techniczne obrazu. </td></tr>
+    <tr><td class="paramname">input_file</td><td>wskaźnik na plik wejściowy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a649eee34a5f369069c73a14072558338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649eee34a5f369069c73a14072558338">&#9670;&nbsp;</a></span>SaveBMPFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SaveBMPFile </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>imgHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>imgWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t ***&#160;</td>
+          <td class="paramname"><em>image_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FILE *&#160;</td>
+          <td class="paramname"><em>output_file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja zapisująca bajty składowych kolorów pikseli do pliku wyjściowego. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imgHeight</td><td>wskaźnik na wysokość obrazu. </td></tr>
+    <tr><td class="paramname">imgWidth</td><td>wskaźnik na szerokość obrazu. </td></tr>
+    <tr><td class="paramname">image_out</td><td>wskaźnik do początku tablicy na dane wyjściowe. </td></tr>
+    <tr><td class="paramname">output_file</td><td>wskaźnik na plik wyjściowy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af16082e0fafbf9d3414c49d747f887d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af16082e0fafbf9d3414c49d747f887d5">&#9670;&nbsp;</a></span>WriteFromStructure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WriteFromStructure </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_b_m_p_f_i_l_e_h_e_a_d_e_r.html">BMPFILEHEADER</a> *&#160;</td>
+          <td class="paramname"><em>FileHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_b_i_t_m_a_p_h_e_a_d_e_r.html">BITMAPHEADER</a> *&#160;</td>
+          <td class="paramname"><em>Header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FILE *&#160;</td>
+          <td class="paramname"><em>output_file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja zapisująca do pliku wyjściowego pozyskane przez funkcję ReadToStructure dane, zapisane do struktury. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">FileHeader</td><td>wskaźnik na podstrukturę mówiąca o tym, czy plik rzeczywiście jest plikiem mapy bitowej. Podstruktura mówi m.in. od którego bajtu zaczynają się piksele. </td></tr>
+    <tr><td class="paramname">Header</td><td>wskaźnik na podstrukturę, której dane opisują wymiary obrazu. Podstruktura zawiera przede wszystkim informacje techniczne obrazu. </td></tr>
+    <tr><td class="paramname">output_file</td><td>wskaźnik na plik wyjściowy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

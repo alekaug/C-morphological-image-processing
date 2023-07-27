@@ -1,0 +1,376 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                            %
+%   W Z O R Z E C   S P R A W O Z D A N I A  %
+%                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[12pt,a4paper,twoside]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}                                      
+\usepackage[OT4]{fontenc}      
+%\usepackage[T1]{fontenc}                            
+\usepackage[polish]{babel}                           
+\selectlanguage{polish}
+\usepackage{indentfirst} 
+\usepackage[dvips]{graphicx}
+\usepackage{tabularx}
+\usepackage{color}
+\usepackage{hyperref} 
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{ifpdf}
+\usepackage{mathtext} % polskie znaki w trybie matematycznym
+%\makeindex  % utworzenie skorowidza (w dokumencie pdf)
+\usepackage{lmodern}
+%\usepackage[osf]{libertine}
+\usepackage{filecontents}
+\usepackage{ifthen}
+
+
+\newcounter{nextYear}
+\setcounter{nextYear}{\the\year}
+\stepcounter{nextYear}
+
+% rozszerzenie nieco strony
+%\setlength{\topmargin}{-1cm} \setlength{\textheight}{24.5cm}
+%\setlength{\textwidth}{17cm} \addtolength{\hoffset}{-1.5cm}
+%\setlength{\parindent}{0.5cm} \setlength{\footskip}{2cm}
+%\linespread{1.2} % odstep pomiedzy wierszami
+
+
+%%%% ZYWA PAGINA %%%%%%%%%%%
+\newcommand{\tl}[1]{\textbf{#1}} 
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} % usuwanie bieżących ustawień
+\fancyhead[LE,RO]{\small\bfseries\thepage}
+\fancyhead[LO]{\small\bfseries\rightmark}
+\fancyhead[RE]{\small\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt} % pionowy odstęp na kreskę
+\fancypagestyle{plain}{%
+\fancyhead{} % usuń p. górne na stronach pozbawionych numeracji
+\renewcommand{\headrulewidth}{0pt} % pozioma kreska
+}
+
+%%%%%   LISTINGI %%%%%%%%
+% ustawienia listingu programow
+
+\lstset{%
+language=C,%
+commentstyle=\textit,%
+identifierstyle=\textsf,%
+keywordstyle=\sffamily\bfseries, %
+%captionpos=b,%
+tabsize=3,%
+frame=lines,%
+numbers=left,%
+numberstyle=\tiny,%
+numbersep=5pt,%
+breaklines=true,%
+morekeywords={pWezel,Wezel,string,ref,params_result},%
+escapeinside={(*@}{@*)},%
+%basicstyle=\footnotesize,%
+%keywords={double,int,for,if,return,vector,matrix,void,public,class,string,%
+%float,sizeof,char,FILE,while,do,const}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%  NOTKI NA MARGINESIE %%%%%%%%%%%%%
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+%%%% WYSWIETLANIE AKTUALNEGO ROKU AKADEMICKIEGO %%%%%%%%%%%
+\newcounter{rok}
+\newcommand{\rokakademicki}{%
+   \setcounter{rok}{\number\year}%
+   \ifthenelse{\number\month<10}%
+   {\addtocounter{rok}{-1}}% rok akademicki zaczal sie w pazdzierniku poprzedniego roku
+   {}%                       rok akademicki zaczyna sie w pazdzierniku tego roku
+   \arabic{rok}/\addtocounter{rok}{1}\arabic{rok}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%% LISTA UWAG %%%%%%%%%
+\usepackage{color}
+\definecolor{brickred}      {cmyk}{0   , 0.89, 0.94, 0.28}
+
+\makeatletter \newcommand \kslistofremarks{\section*{Uwagi} \@starttoc{rks}}
+\newcommand\l@uwagas[2]
+{\par\noindent \textbf{#2:} %\parbox{10cm}
+   {#1}\par} \makeatother
+
+
+\newcommand{\ksremark}[1]{%
+   {{\color{brickred}{[#1]}}}%
+   \addcontentsline{rks}{uwagas}{\protect{#1}}%
+}
+
+\newcommand{\comma}{\ksremark{przecinek}}
+\newcommand{\nocomma}{\ksremark{bez przecinka}}
+\newcommand{\styl}{\ksremark{styl}}
+\newcommand{\ortografia}{\ksremark{ortografia}}
+\newcommand{\fleksja}{\ksremark{fleksja}}
+\newcommand{\pauza}{\ksremark{pauza `--', nie dywiz `-'}}
+\newcommand{\kolokwializm}{\ksremark{kolokwializm}}
+\newcommand{\cytowanie}{\ksremark{cytowanie}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% autor:
+\fancyhead[RE]{\small\bfseries Aleksander Augustyniak} % autor sprawozdania
+
+
+
+%%%%%%%%%%% NO I ZACZYNA SIE SPRAWOZDANIE %%%%%%%%%%%
+
+\begin{document}
+\frenchspacing
+\thispagestyle{empty}
+\begin{center}
+{\Large\sf Politechnika Śląska   % Alma Mater
+
+Wydział Informatyki, Elektroniki i Informatyki
+
+}
+
+\vfill
+
+ 
+
+\vfill\vfill
+
+{\Huge\sffamily\bfseries Programowanie Komputerów\par}  
+
+\vfill\vfill
+
+{\LARGE\sf Operacje morfologiczne na obrazie}   
+
+
+\vfill \vfill\vfill\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\begin{tabular}{ll}
+	\toprule
+	autor                       & Aleksander Augustyniak     \\
+	prowadzący                  & mgr inż. Marek Kokot  \\
+	rok akademicki              & \rokakademicki         \\
+	kierunek                    & informatyka            \\
+	rodzaj studiów              & SSI                    \\
+	semestr                     & 2                      \\
+	termin laboratorium         & środa, 11:30 – 13:00 \\
+	sekcja                      & druga                     \\
+	termin oddania sprawozdania & 2020-09-18             \\
+	\bottomrule
+	                            &
+\end{tabular}
+
+\end{center}
+%%% koniec strony  tytulowej
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Treść zadania}
+%\marginpar{Dokładny opis zadania, zgodny z tematem podanym przez prowadzącego.}
+Napisać program umożliwiający przeprowadzenie operacji morfologicznych obrazu zawartego w pliku BMP. Element strukturalny powinien być zdefiniowany przez użytkownika poprzez dostarczenie odpowiedniego pliku tekstowego. Program powinien działać dla obrazów czarno-białych. Program
+powinien umożliwić wykonanie następujących operacji: dylatacji, erozji, otwarcia oraz domknięcia.
+
+Aby uruchomić program należy podać dokładne lokalizacje odpowiednich plików w linii poleceń: \par
+\begin{tabular}{ll}
+{plik_wejściowy.BMP plik_wyjściowy.BMP element_strukturalny.TXT znak_operacji}\\
+\end{tabular}
+
+Do przechowywania liczb należy wykorzystać drzewa czerwono-czarne. Jest to warunek sine qua non.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Analiza zadania}
+
+Zadanie skupia się wokół problemu sortowania liczb rzeczywistych, zapisanych w pliku o podanej przez użytkownika nazwie. Struktura danych powinna wykorzystywać dynamiczne alokowanie pamięci, w celu szybszego wykonywania operacji na danych. Jednym z warunków przystąpienia do napisania programu jest umiejętność korzystania z pamięci w ten sposób, aby nie powodować wycieku danych. 
+
+Do zrealizowania zadania potrzebne jest zarezerwowanie jednego bitu pamięci dla każdego z węzłów zawartych w strukturze danych, w celu opisania koloru danego węzła.
+	
+\subsection{Struktury danych}
+
+Program wykorzystuje drzewo czerwono–czarne do przechowywania wartości. Wartość jest przypisywana węzłowi o odpowiednim kolorze. Węzeł może mieć jednego, dwóch potomków lub ich nie mieć. W lewym poddrzewie wybranego węzła występują wartości mniejsze od wartości przechowywanej przez \emph{węzeł–rodzic}, zaś wartości niemniejsze są umieszczone w prawym poddrzewie węzła. Rysunek  \ref{fig:drzewko} przedstawia wizualizację drzewa czerwono–czarnego. \\
+
+\noindent Podstawowe zasady panujące w drzewie czerwono–czarnym:~\cite{id:Cormen2009introductionToAlgorithms}
+\begin{enumerate}
+	\item{Każdy z węzłów jest czerwony lub czarny.}
+	\item{Korzeń drzewa jest czarny.}
+	\item{Wszystkie liście (NIL) są czarne.}
+	\item{Jeżeli węzeł jest czerwony, to oba jego potomki są czarne.}
+	\item{Każda ścieżka od wybranego węzła do liścia zawiera tę samą ilość czarnych węzłów.}	
+\end{enumerate}
+\label{zasady_drzewa}
+
+Powyższe zasady – opisujące wzajemny stosunek węzłów drzewa – pomagają zapanować nad wartościami przechowywanymi w węzłach oraz równoważyć jego wysokość. Pozwala to na skrócenie czasu poszukiwania, usuwania oraz dodawania wartości do struktury.
+
+
+\subsection{Algorytmy}
+
+Dodawanie wartości do drzewa czerwono–czarnego jest realizowane podobnie, jak w drzewie poszukiwań binarnych, lecz dodatkowo program wykonuje lokalne operacje na węzłach, takie jak: rotacje w lewo/prawo oraz zmiana kolorów węzłów, by przywrócić właściwości drzewa czerwono–czarnego.
+
+Gwarantowana złożoność obliczeniowa dla operacji dodawania, wyszukiwania, usuwania węzłów wynosi średnio, jak i w najgorszym przypadku $O(\log{\emph{n})}$, gdzie \emph{n} oznacza ilość wszystkich elementów znajdujących się w strukturze danych. \cite{id:PatonData} Złożoność obliczeniowa algorytmów rotacji w lewo, w prawo oraz zmiany kolorów węzłów również wynosi $O(\log{\emph{n})}$. \cite{id:Morris1998data}  
+
+By zrealizować operacje wypisywania i usuwania wartości węzłów, program rekurencyjnie przechodzi przez wszystkie węzły drzewa.
+
+\begin{figure}
+\centering
+\caption{Wizualizacja drzewa czerwono–czarnego przechowującego liczby rzeczywiste. Węzły reprezentują wartości wprowadzone w następującej kolejności: 327, 54, 224, 81, 703, 885, 192, 860, 265, 675.}
+\label{fig:drzewko}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Specyfikacja zewnętrzna}
+\label{sec:sp:zewnetrzna}
+
+Aby uruchomić program, należy wprowadzić do linii poleceń, w odpowiedniej kolejności: \\
+\indent\texttt{nazwa\_programu -i plik\_wejściowy} \\
+Jeżeli program nie został prawidłowo uruchomiony, pojawi się stosowny komunikat z ewentualną instrukcją prawidłowego uruchomienia programu.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Specyfikacja wewnętrzna}\label{sec:sp-wew}
+
+Program realizuje pojedyncze komendy usuwając z wczytanego łańcucha znakowego niepotrzebne znaki, np. znaki białe, znak rozpoczęcia komentrza (i znaki znajdujące się bezpośrednio za nim, aż do końca linii).
+
+W trakcie zczytywania pojedynczych wartości program decyduje o tym, czy wczytana wartość jest prawidłowa, tzn. czy nie zawiera znaków nie będących cyframi. Ponadto, jeżeli funkcja zczytująca dane dostanie informację o liczbie, wykraczającej poza zakres określony dla jej typu, liczba ta zostanie zignorowana, a program dalej będzie realizowany.
+
+\subsection{Ogólna struktura programu}
+%\marginpar{Ogólna struktura programu, żeby czytelnik miał rozeznanie, co się w programie dzieje, jak program jest skonstruowany.}
+
+Funkcja główna sprawdza, czy ilość wprowadzonych parametrów do linii poleceń jest większa od dwóch. Jeżeli nie – program kończy się – w przeciwnym wypadku zostaje uruchomiona funkcja \lstinline|ReadFromFile|, przyjmująca jeden plik wejściowy. Funkcja ta zczytuje – linia po linii – każde polecenie i wywołuje odpowiednie podfunkcje: \lstinline|Add|, \lstinline|Delete|, \lstinline|Print|, \lstinline|Graph|, itd. – w zależności od znajdującej się w pliku wejściowym komendy.
+
+Program – po wczytaniu wszystkich komend – dealokuje całą zajętą przez drzewo pamięć i zamyka się.
+	
+\subsection{Szczegółowy opis typów i funkcji}
+
+Szczegółowy opis typów i funkcji znajduje się w załączniku.
+
+\section{Testowanie}
+%\marginpar{Należy opisać jak program był testowany (na zbiorach poprawnych i typowych, na zbiorach poprawnych, ale nietypowych i wreszcie na zbiorach niepoprawnych). Należy opisać zbiory testowe.}
+Program został przetestowany na plikach:
+\begin{itemize}
+	\item{typowych, poprawnych – w których komendy następowały po sobie w różnym porządku;}
+	\item{nietypowych i poprawnych – o znacznej ilości danych;}
+	\item{niepoprawnych – wynikiem tego było ignorowanie źle wypisanych komend i liczb zawierających znaki inne niż 	 zarezerwowane dla cyfr.}
+\end{itemize}
+
+Przetestowane zostały również funkcje wykorzystujące rekurencyjne przechodzenie przez węzły.
+
+W tabeli \ref{tab:1} przedstawiono wyniki testów sprawdzających zapotrzebowanie pamięci na określoną ilość wprowadzonych danych: \\
+
+Program został również sprawdzony pod kątem wycieków pamięci.
+
+\section{Uzyskane wyniki}
+
+
+\begin{center} \small
+\begin{table}[htb]
+\begin{tabular}{ | c | c | } 
+\hline
+ \bfseries{ilość liczb dodanych do struktury} & \bfseries{pamięć przydzielona procesowi} \\ 
+\hline
+ $10000$ & \mbox{3$\,$MB} \\ 
+\hline
+ $20000$ & \mbox{6$\,$MB} \\
+\hline
+ $30000$ & \mbox{9$\,$MB} \\
+\hline
+ $50000$ & \mbox{15$\,$MB} \\
+\hline
+ $75000$ & \mbox{18.4$\,$MB} \\
+\hline
+ $100000$ & \mbox{25.2$\,$MB} \\
+\hline
+ $250000$ & \mbox{60.6$\,$MB} \\
+\hline
+ $500000$ & \mbox{120$\,$MB} \\
+\hline
+ $8000000$ & \mbox{1.9$\,$GB} \\
+\hline
+\end{tabular}
+\caption{Zestawienie przybliżonej ilości zapotrzebowania na pamięć, potrzebnej do dodania do struktury określonej ilości danych.}
+\label{tab:1}
+\end{table}
+\end{center}
+
+\section{Wnioski}
+Program wykorzystujący drzewa czerwono–czarne jako strukturę danych nie jest programem łatwym do napisania. Szczególną trudność sprawiło mi obsłużenie sytuacji usuwania wartości z drzewa, które wymagało przywrócenia jego własności. \ref{zasady_drzewa}
+
+W napisaniu projektu pomogło mi dobre nastawienie, solidna, codzienna praca. Przed przystąpieniem do projektu pisałem wiele innych programów, które były zlecone do wykonania przez prowadzącego na laboratorium. Robiłem również dodatkowe zadania, pozwalające uzyskać odpowiednią sprawność w kodowaniu. Cały wysiłek, który przeznaczyłem przez ostatni semestr na programowanie, zaowocowało zdobytą przeze mnie wiedzą, z której będę mógł w odpowiednim momencie skorzystać.
+
+Niestety, nie udało mi się przetestować programu na maszynach z innym systemem operacyjnym niż Windows 10.
+
+\begin{filecontents}{bibliografia.bib}
+
+
+@book{id:Cormen2009introductionToAlgorithms,
+	author	= {Thomas Cormen and Charles Leiserson and Ronalds Rivest and Clifford Stein},
+	title		= {„13”. Introduction to Algorithms (3rd ed.)},
+	YEAR		= {2009},
+}
+
+@online{id:Morris1998data,
+    author = {John Morris},
+    title = {„Red–Black Trees”. Data Structures and Algorithms.},
+    url  = "https://www.cs.auckland.ac.nz/software/AlgAnim/red_black.html",
+    keywords = "Red-Black Trees,Morris",
+    YEAR		= {1998}
+}
+
+@online{id:PatonData,
+    author = {James Paton},
+    title = "Red-Black Trees",
+    url  = "http://pages.cs.wisc.edu/~paton/readings/Red-Black-Trees/",
+}
+
+\end{filecontents}
+
+
+\bibliographystyle{plplain}
+\bibliography{bibliografia}
+
+\cleardoublepage
+
+\rule{0cm}{0cm}
+
+\vfill
+
+\begin{center}
+\Huge\bfseries Dodatek\\Szczegółowy opis typów i~funkcji\par
+\end{center}
+
+\vfill 
+
+\rule{0cm}{0cm}
+
+\end{document}
+% Koniec wieńczy dzieło.

@@ -1,0 +1,97 @@
+\hypertarget{struct_b_m_p_f_i_l_e_h_e_a_d_e_r}{}\doxysection{Dokumentacja struktury B\+M\+P\+F\+I\+L\+E\+H\+E\+A\+D\+ER}
+\label{struct_b_m_p_f_i_l_e_h_e_a_d_e_r}\index{BMPFILEHEADER@{BMPFILEHEADER}}
+
+
+Pierwsza w kolejności podstruktura struktury nagłówkowej pliku mapy bitowej.  
+
+
+
+
+{\ttfamily \#include $<$bmp.\+h$>$}
+
+\doxysubsection*{Pola danych}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_aee9fe4b29eefb2ac0c96d20bc4b4c130}{s1}}
+\begin{DoxyCompactList}\small\item\em Pierwszy znak typu pliku w kodzie A\+S\+C\+II (powinien wskazywać \textquotesingle{}M\textquotesingle{}). \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_a44ed103214565594842acb163457df13}{s2}}
+\begin{DoxyCompactList}\small\item\em Drugi znak typu pliku w kodzie A\+S\+C\+II (powinien wskazywać \textquotesingle{}M\textquotesingle{}). \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_ab2c6b258f02add8fdf4cfc7c371dd772}{size}}
+\begin{DoxyCompactList}\small\item\em Rozmiar pliku obrazu mapy bitowej (powinno być 70 bajtów). \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_ac1fc3e4ab3a63d0dfebc15eda254cc20}{r1}}
+\begin{DoxyCompactList}\small\item\em Bajt zarezerwowany dla aplikacji. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_a576010f6e434d7d90b09f17e029abc55}{r2}}
+\begin{DoxyCompactList}\small\item\em Bajt zarezerwowany dla aplikacji. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_a894bdfa2d603d8343f8ef01dda6fcd23}{offset}}
+\begin{DoxyCompactList}\small\item\em Numer bajtu, który rozpoczyna macierz pikseli. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Pierwsza w kolejności podstruktura struktury nagłówkowej pliku mapy bitowej. 
+
+\doxysubsection{Dokumentacja pól}
+\mbox{\Hypertarget{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_a894bdfa2d603d8343f8ef01dda6fcd23}\label{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_a894bdfa2d603d8343f8ef01dda6fcd23}} 
+\index{BMPFILEHEADER@{BMPFILEHEADER}!offset@{offset}}
+\index{offset@{offset}!BMPFILEHEADER@{BMPFILEHEADER}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily uint32\+\_\+t offset}
+
+
+
+Numer bajtu, który rozpoczyna macierz pikseli. 
+
+\mbox{\Hypertarget{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_ac1fc3e4ab3a63d0dfebc15eda254cc20}\label{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_ac1fc3e4ab3a63d0dfebc15eda254cc20}} 
+\index{BMPFILEHEADER@{BMPFILEHEADER}!r1@{r1}}
+\index{r1@{r1}!BMPFILEHEADER@{BMPFILEHEADER}}
+\doxysubsubsection{\texorpdfstring{r1}{r1}}
+{\footnotesize\ttfamily uint16\+\_\+t r1}
+
+
+
+Bajt zarezerwowany dla aplikacji. 
+
+\mbox{\Hypertarget{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_a576010f6e434d7d90b09f17e029abc55}\label{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_a576010f6e434d7d90b09f17e029abc55}} 
+\index{BMPFILEHEADER@{BMPFILEHEADER}!r2@{r2}}
+\index{r2@{r2}!BMPFILEHEADER@{BMPFILEHEADER}}
+\doxysubsubsection{\texorpdfstring{r2}{r2}}
+{\footnotesize\ttfamily uint16\+\_\+t r2}
+
+
+
+Bajt zarezerwowany dla aplikacji. 
+
+\mbox{\Hypertarget{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_aee9fe4b29eefb2ac0c96d20bc4b4c130}\label{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_aee9fe4b29eefb2ac0c96d20bc4b4c130}} 
+\index{BMPFILEHEADER@{BMPFILEHEADER}!s1@{s1}}
+\index{s1@{s1}!BMPFILEHEADER@{BMPFILEHEADER}}
+\doxysubsubsection{\texorpdfstring{s1}{s1}}
+{\footnotesize\ttfamily uint8\+\_\+t s1}
+
+
+
+Pierwszy znak typu pliku w kodzie A\+S\+C\+II (powinien wskazywać \textquotesingle{}M\textquotesingle{}). 
+
+\mbox{\Hypertarget{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_a44ed103214565594842acb163457df13}\label{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_a44ed103214565594842acb163457df13}} 
+\index{BMPFILEHEADER@{BMPFILEHEADER}!s2@{s2}}
+\index{s2@{s2}!BMPFILEHEADER@{BMPFILEHEADER}}
+\doxysubsubsection{\texorpdfstring{s2}{s2}}
+{\footnotesize\ttfamily uint8\+\_\+t s2}
+
+
+
+Drugi znak typu pliku w kodzie A\+S\+C\+II (powinien wskazywać \textquotesingle{}M\textquotesingle{}). 
+
+\mbox{\Hypertarget{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_ab2c6b258f02add8fdf4cfc7c371dd772}\label{struct_b_m_p_f_i_l_e_h_e_a_d_e_r_ab2c6b258f02add8fdf4cfc7c371dd772}} 
+\index{BMPFILEHEADER@{BMPFILEHEADER}!size@{size}}
+\index{size@{size}!BMPFILEHEADER@{BMPFILEHEADER}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily uint32\+\_\+t size}
+
+
+
+Rozmiar pliku obrazu mapy bitowej (powinno być 70 bajtów). 
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{bmp_8h}{bmp.\+h}}\end{DoxyCompactItemize}

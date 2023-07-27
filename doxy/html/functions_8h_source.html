@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Operacje morfologiczne na obrazie: Plik źródłowy functions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Operacje morfologiczne na obrazie
+   &#160;<span id="projectnumber">0.97</span>
+   </div>
+   <div id="projectbrief">Program przetwarzający obraz cyfrowy zawarty w mapie bitowej.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">functions.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="functions_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef functions_h</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define functions_h</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;uint8_t*** <a class="code" href="functions_8h.html#a560aef7e2cceaa16b6a05e6ab4d8cf54">AllocateInputMemory</a>(<span class="keyword">const</span> uint32_t* imgHeight, <span class="keyword">const</span> uint32_t* imgWidth);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;uint8_t*** <a class="code" href="functions_8h.html#a3b99f073b454b8cb94e1a2655aa23b32">DeallocateInputMemory</a>(uint8_t*** image_in, <span class="keyword">const</span> uint32_t* imgHeight, <span class="keyword">const</span> uint32_t* imgWidth);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="functions_8h.html#a2333901c1a889b9e557edcf23483c280">ReadPixels</a>(uint8_t*** image_in, <span class="keyword">const</span> uint32_t* imgHeight, <span class="keyword">const</span> uint32_t* imgWidth, <span class="keyword">const</span> FILE* input_file, uint32_t* offset_byte);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;uint8_t*** <a class="code" href="functions_8h.html#abe7f534f56ff2ebe84bd3966c3c6cdfc">AllocateOutputMemory</a>(uint8_t*** image_in, <span class="keyword">const</span> uint32_t* imgHeight, <span class="keyword">const</span> uint32_t* imgWidth);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;uint8_t*** <a class="code" href="functions_8h.html#a58cb1948b72ea1d3a27c369dcbad5b2f">DeallocateOutputMemory</a>(uint8_t*** image_out, <span class="keyword">const</span> uint8_t* imgHeight, <span class="keyword">const</span> uint8_t* imgWidth);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="functions_8h.html#a649eee34a5f369069c73a14072558338">SaveBMPFile</a>(<span class="keyword">const</span> uint32_t* imgHeight, <span class="keyword">const</span> uint32_t* imgWidth, <span class="keyword">const</span> uint8_t*** image_out, <span class="keyword">const</span> FILE* output_file);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="functions_8h.html#a0d82755f1653333cff7d92985aca4be8">ReadToStructure</a>(<span class="keyword">const</span> <a class="code" href="struct_b_m_p_f_i_l_e_h_e_a_d_e_r.html">BMPFILEHEADER</a>* FileHeader, <span class="keyword">const</span> <a class="code" href="struct_b_i_t_m_a_p_h_e_a_d_e_r.html">BITMAPHEADER</a>* Header, <span class="keyword">const</span> FILE* input_file);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="functions_8h.html#af16082e0fafbf9d3414c49d747f887d5">WriteFromStructure</a>(<span class="keyword">const</span> <a class="code" href="struct_b_m_p_f_i_l_e_h_e_a_d_e_r.html">BMPFILEHEADER</a>* FileHeader, <span class="keyword">const</span> <a class="code" href="struct_b_i_t_m_a_p_h_e_a_d_e_r.html">BITMAPHEADER</a>* Header, <span class="keyword">const</span>  FILE* output_file);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;uint8_t* <a class="code" href="functions_8h.html#a3ea3aae49c3b635a4436fba467bbc221">change_pixel_color</a>(uint8_t* pixel, uint8_t color);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;uint8_t <a class="code" href="functions_8h.html#a90e79aa710e9f35e9cfe08a10abaaa23">check_pixel_color</a>(uint8_t* pixel);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> <a class="code" href="functions_8h.html#adc6ae4afa7a8dc295f15bf27622eacbc">operation</a>(<span class="keyword">const</span> uint8_t type, uint8_t*** image_in, uint8_t*** image_out, uint32_t width, uint32_t height, <a class="code" href="structpixel__structure.html">pixel_structure</a>* sieve, uint32_t* coordinates);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">void</span> <a class="code" href="functions_8h.html#a29976ea6082762a7fbd9e4e771d6af84">opening</a>(uint8_t*** image_in, uint8_t*** image_out, uint32_t width, uint32_t height, <a class="code" href="structpixel__structure.html">pixel_structure</a>* sieve, uint32_t* coordinates);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">void</span> <a class="code" href="functions_8h.html#afcfc3d6fc3d4b054564de48b06bc9a7e">closing</a>(uint8_t*** image_in, uint8_t*** image_out, uint32_t width, uint32_t height, <a class="code" href="structpixel__structure.html">pixel_structure</a>* sieve, uint32_t* coordinates);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<a class="code" href="structpixel__structure.html">pixel_structure</a>* <a class="code" href="functions_8h.html#a6842669a6712bf225a576380782a5f9b">load_sieve</a>(FILE* stream);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">void</span> <a class="code" href="functions_8h.html#a81eca269735cafcf4f34326e152f0ffe">deallocate_sieve</a>(<a class="code" href="structpixel__structure.html">pixel_structure</a>* sieve);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;uint32_t* <a class="code" href="functions_8h.html#afbb0e7eebdb03b5ce773ab1e2082e745">main_point</a>(<a class="code" href="structpixel__structure.html">pixel_structure</a>* sieve);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="afunctions_8h_html_a3ea3aae49c3b635a4436fba467bbc221"><div class="ttname"><a href="functions_8h.html#a3ea3aae49c3b635a4436fba467bbc221">change_pixel_color</a></div><div class="ttdeci">uint8_t * change_pixel_color(uint8_t *pixel, uint8_t color)</div><div class="ttdoc">Funkcja zamienia kolor danego przez adres piksela.</div><div class="ttdef"><b>Definition:</b> functions.c:165</div></div>
+<div class="ttc" id="afunctions_8h_html_a560aef7e2cceaa16b6a05e6ab4d8cf54"><div class="ttname"><a href="functions_8h.html#a560aef7e2cceaa16b6a05e6ab4d8cf54">AllocateInputMemory</a></div><div class="ttdeci">uint8_t *** AllocateInputMemory(const uint32_t *imgHeight, const uint32_t *imgWidth)</div><div class="ttdoc">Funkcja alokująca tyle pamięci, by pomieścić cały zakres kolorów (wysokość x szerokość x 3 składowe).</div><div class="ttdef"><b>Definition:</b> functions.c:14</div></div>
+<div class="ttc" id="afunctions_8h_html_a649eee34a5f369069c73a14072558338"><div class="ttname"><a href="functions_8h.html#a649eee34a5f369069c73a14072558338">SaveBMPFile</a></div><div class="ttdeci">void SaveBMPFile(const uint32_t *imgHeight, const uint32_t *imgWidth, const uint8_t ***image_out, const FILE *output_file)</div><div class="ttdoc">Funkcja zapisująca bajty składowych kolorów pikseli do pliku wyjściowego.</div><div class="ttdef"><b>Definition:</b> functions.c:100</div></div>
+<div class="ttc" id="afunctions_8h_html_a6842669a6712bf225a576380782a5f9b"><div class="ttname"><a href="functions_8h.html#a6842669a6712bf225a576380782a5f9b">load_sieve</a></div><div class="ttdeci">pixel_structure * load_sieve(FILE *stream)</div><div class="ttdoc">Funkcja wczytująca do specjalnej struktury element strukturalny.</div><div class="ttdef"><b>Definition:</b> functions.c:247</div></div>
+<div class="ttc" id="astructpixel__structure_html"><div class="ttname"><a href="structpixel__structure.html">pixel_structure</a></div><div class="ttdoc">Struktura listy jednokierunkowej elementu strukturalnego. Składa się ona ze wskaźnika na następny ele...</div><div class="ttdef"><b>Definition:</b> bmp.h:55</div></div>
+<div class="ttc" id="afunctions_8h_html_a29976ea6082762a7fbd9e4e771d6af84"><div class="ttname"><a href="functions_8h.html#a29976ea6082762a7fbd9e4e771d6af84">opening</a></div><div class="ttdeci">void opening(uint8_t ***image_in, uint8_t ***image_out, uint32_t width, uint32_t height, pixel_structure *sieve, uint32_t *coordinates)</div><div class="ttdoc">Funkcja otwarcia morfologicznego, która wykonuje na obrazie w odpowiedniej kolejności operacje w celu...</div><div class="ttdef"><b>Definition:</b> functions.c:237</div></div>
+<div class="ttc" id="afunctions_8h_html_a3b99f073b454b8cb94e1a2655aa23b32"><div class="ttname"><a href="functions_8h.html#a3b99f073b454b8cb94e1a2655aa23b32">DeallocateInputMemory</a></div><div class="ttdeci">uint8_t *** DeallocateInputMemory(uint8_t ***image_in, const uint32_t *imgHeight, const uint32_t *imgWidth)</div><div class="ttdoc">Funkcja dealokująca całą pamięć zajętą przez funkcję AllocateInputMemory.</div><div class="ttdef"><b>Definition:</b> functions.c:32</div></div>
+<div class="ttc" id="afunctions_8h_html_a0d82755f1653333cff7d92985aca4be8"><div class="ttname"><a href="functions_8h.html#a0d82755f1653333cff7d92985aca4be8">ReadToStructure</a></div><div class="ttdeci">void ReadToStructure(const BMPFILEHEADER *FileHeader, const BITMAPHEADER *Header, const FILE *input_file)</div><div class="ttdoc">Funkcja zapisująca do struktury dane nagłówka pliku, zawierającego informacje nt. obrazu,...</div><div class="ttdef"><b>Definition:</b> functions.c:117</div></div>
+<div class="ttc" id="afunctions_8h_html_adc6ae4afa7a8dc295f15bf27622eacbc"><div class="ttname"><a href="functions_8h.html#adc6ae4afa7a8dc295f15bf27622eacbc">operation</a></div><div class="ttdeci">void operation(const uint8_t type, uint8_t ***image_in, uint8_t ***image_out, uint32_t width, uint32_t height, pixel_structure *sieve, uint32_t *coordinates)</div><div class="ttdoc">Główny algorytm, który odpowiada za wykonanie operacji morfologicznych na obrazie....</div><div class="ttdef"><b>Definition:</b> functions.c:177</div></div>
+<div class="ttc" id="astruct_b_m_p_f_i_l_e_h_e_a_d_e_r_html"><div class="ttname"><a href="struct_b_m_p_f_i_l_e_h_e_a_d_e_r.html">BMPFILEHEADER</a></div><div class="ttdoc">Pierwsza w kolejności podstruktura struktury nagłówkowej pliku mapy bitowej.</div><div class="ttdef"><b>Definition:</b> bmp.h:12</div></div>
+<div class="ttc" id="afunctions_8h_html_abe7f534f56ff2ebe84bd3966c3c6cdfc"><div class="ttname"><a href="functions_8h.html#abe7f534f56ff2ebe84bd3966c3c6cdfc">AllocateOutputMemory</a></div><div class="ttdeci">uint8_t *** AllocateOutputMemory(uint8_t ***image_in, const uint32_t *imgHeight, const uint32_t *imgWidth)</div><div class="ttdoc">Funkcja alokująca tyle pamięci, by pomieścić cały zakres kolorów dla pliku wyjściowego.</div><div class="ttdef"><b>Definition:</b> functions.c:67</div></div>
+<div class="ttc" id="afunctions_8h_html_afcfc3d6fc3d4b054564de48b06bc9a7e"><div class="ttname"><a href="functions_8h.html#afcfc3d6fc3d4b054564de48b06bc9a7e">closing</a></div><div class="ttdeci">void closing(uint8_t ***image_in, uint8_t ***image_out, uint32_t width, uint32_t height, pixel_structure *sieve, uint32_t *coordinates)</div><div class="ttdoc">Funkcja zamknięcia morfologicznego, która wykonuje na obrazie w odpowiedniej kolejności operacje w ce...</div><div class="ttdef"><b>Definition:</b> functions.c:242</div></div>
+<div class="ttc" id="astruct_b_i_t_m_a_p_h_e_a_d_e_r_html"><div class="ttname"><a href="struct_b_i_t_m_a_p_h_e_a_d_e_r.html">BITMAPHEADER</a></div><div class="ttdoc">Struktura przechowująca nagłówek DIB.</div><div class="ttdef"><b>Definition:</b> bmp.h:23</div></div>
+<div class="ttc" id="afunctions_8h_html_a2333901c1a889b9e557edcf23483c280"><div class="ttname"><a href="functions_8h.html#a2333901c1a889b9e557edcf23483c280">ReadPixels</a></div><div class="ttdeci">void ReadPixels(uint8_t ***image_in, const uint32_t *imgHeight, const uint32_t *imgWidth, const FILE *input_file, uint32_t *offset_byte)</div><div class="ttdoc">Funkcja sczytująca do struktury poszczególne składowe każdego piksela obrazu wejściowego....</div></div>
+<div class="ttc" id="afunctions_8h_html_a90e79aa710e9f35e9cfe08a10abaaa23"><div class="ttname"><a href="functions_8h.html#a90e79aa710e9f35e9cfe08a10abaaa23">check_pixel_color</a></div><div class="ttdeci">uint8_t check_pixel_color(uint8_t *pixel)</div><div class="ttdoc">Funkcja sprawdza jakiego koloru jest podany piksel.</div><div class="ttdef"><b>Definition:</b> functions.c:173</div></div>
+<div class="ttc" id="afunctions_8h_html_a58cb1948b72ea1d3a27c369dcbad5b2f"><div class="ttname"><a href="functions_8h.html#a58cb1948b72ea1d3a27c369dcbad5b2f">DeallocateOutputMemory</a></div><div class="ttdeci">uint8_t *** DeallocateOutputMemory(uint8_t ***image_out, const uint8_t *imgHeight, const uint8_t *imgWidth)</div><div class="ttdoc">Funkcja dealokująca całą pamięć zajętą przez funkcję AllocateOutputMemory.</div><div class="ttdef"><b>Definition:</b> functions.c:89</div></div>
+<div class="ttc" id="afunctions_8h_html_af16082e0fafbf9d3414c49d747f887d5"><div class="ttname"><a href="functions_8h.html#af16082e0fafbf9d3414c49d747f887d5">WriteFromStructure</a></div><div class="ttdeci">void WriteFromStructure(const BMPFILEHEADER *FileHeader, const BITMAPHEADER *Header, const FILE *output_file)</div><div class="ttdoc">Funkcja zapisująca do pliku wyjściowego pozyskane przez funkcję ReadToStructure dane,...</div><div class="ttdef"><b>Definition:</b> functions.c:141</div></div>
+<div class="ttc" id="afunctions_8h_html_afbb0e7eebdb03b5ce773ab1e2082e745"><div class="ttname"><a href="functions_8h.html#afbb0e7eebdb03b5ce773ab1e2082e745">main_point</a></div><div class="ttdeci">uint32_t * main_point(pixel_structure *sieve)</div><div class="ttdoc">Algorytm wykrywający współrzędne piksela modyfikowanego (głównego) elementu strukturalnego.</div><div class="ttdef"><b>Definition:</b> functions.c:304</div></div>
+<div class="ttc" id="afunctions_8h_html_a81eca269735cafcf4f34326e152f0ffe"><div class="ttname"><a href="functions_8h.html#a81eca269735cafcf4f34326e152f0ffe">deallocate_sieve</a></div><div class="ttdeci">void deallocate_sieve(pixel_structure *sieve)</div><div class="ttdoc">Funkcja dealokująca pamięć, potrzebną by wczytać element strukturalny.</div><div class="ttdef"><b>Definition:</b> functions.c:332</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>
